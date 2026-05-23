@@ -471,6 +471,20 @@ section {
   text-align: center;
 }
 
+.lang-switch {
+  margin: 0.75rem 0 0;
+  font-size: 0.95rem;
+}
+
+.lang-switch a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.lang-switch a:hover {
+  text-decoration: underline;
+}
+
 @media (min-width: 640px) {
   .guide-toc ol {
     columns: 2;

@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>User Guide — Time Card</title>
+    <meta
+      name="description"
+      content="How to use Time Card: punch in/out, monthly and yearly summaries, workplaces, backup, and home screen widgets."
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/app-icon.png" width="40" height="40" alt="" />
+          <span>Time Card</span>
+        </a>
+        <nav class="nav" aria-label="Site navigation">
+          <a href="index.html">Home</a>
+          <a href="help-en.html" aria-current="page">Guide</a>
+          <a href="help.html" hreflang="ja">日本語</a>
+          <a href="index.html#download">Download</a>
+          <a href="privacy.html">Privacy</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="guide-page">
+      <div class="container">
+        <header class="guide-header">
+          <p class="eyebrow">User guide</p>
+          <h1>Screens and basic operations</h1>
+          <p class="lead">
+            This guide explains how to use <strong>Time Card</strong>, a time-tracking app for part-time workers, freelancers, and others paid by the hour. Menu names below match the <strong>English</strong> app UI (labels differ in Japanese).
+          </p>
+          <p class="lang-switch">
+            <a href="help.html">日本語版はこちら</a>
+          </p>
+        </header>
+
+        <nav class="guide-toc" aria-label="Table of contents">
+          <h2 class="guide-toc-title">Contents</h2>
+          <ol>
+            <li><a href="#start">Getting started</a></li>
+            <li><a href="#tabs">Bottom tabs</a></li>
+            <li><a href="#home">Home — punch in/out</a></li>
+            <li><a href="#month">Monthly — review a month</a></li>
+            <li><a href="#year">Yearly — annual trends</a></li>
+            <li><a href="#daily">Daily — edit one day</a></li>
+            <li><a href="#workplace">Workplaces</a></li>
+            <li><a href="#pattern">Work patterns</a></li>
+            <li><a href="#settings">Settings</a></li>
+            <li><a href="#widget">Home screen widget</a></li>
+            <li><a href="#backup">Backup &amp; restore</a></li>
+            <li><a href="#export">Export &amp; share (CSV)</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#notes">Important notes</a></li>
+          </ol>
+        </nav>
+
+        <article class="guide-body">
+          <section id="start" class="guide-section">
+            <h2>Getting started</h2>
+            <p>
+              Time Card records <strong>when you work</strong> on your device and shows <strong>estimated pay</strong> based on hourly settings. It is meant for personal use, not as a replacement for a company-wide attendance system.
+            </p>
+            <ol class="guide-steps">
+              <li>Install the app from the App Store or Google Play.</li>
+              <li>
+                Open the <strong>Settings</strong> tab → <strong>Workplaces</strong> and register a workplace name, hourly wage, and other options (a setup dialog may appear on first launch).
+              </li>
+              <li>
+                On the <strong>Home</strong> tab, tap <strong>Clock in</strong> / <strong>Clock out</strong> to record your work.
+              </li>
+              <li>
+                On the <strong>Monthly</strong> tab, review hours and estimated pay for the month.
+              </li>
+            </ol>
+            <p class="guide-note">
+              Data is stored <strong>on your device</strong> by default. Before changing phones, use <strong>Backup &amp; restore</strong> (described below).
+            </p>
+          </section>
+
+          <section id="tabs" class="guide-section">
+            <h2>Bottom tabs</h2>
+            <p>Use the tabs at the bottom of the screen to move between main areas.</p>
+            <dl class="guide-dl">
+              <dt>Home</dt>
+              <dd>Today’s punch in/out, workplace selection, monthly goal progress, and more.</dd>
+              <dt>Monthly</dt>
+              <dd>Monthly list and totals. See start/end times and estimated pay per day.</dd>
+              <dt>Yearly</dt>
+              <dd>Annual income chart and goal progress simulation.</dd>
+              <dt>Settings</dt>
+              <dd>Workplaces, work patterns, widget, backup, app preferences, and more.</dd>
+            </dl>
+          </section>
+
+          <section id="home" class="guide-section">
+            <h2>Home — punch in/out</h2>
+            <h3>Clock in and clock out</h3>
+            <ul>
+              <li>
+                Tap the large center button to <strong>clock in</strong> or <strong>clock out</strong> (the label changes with your current status).
+              </li>
+              <li>
+                Use the <strong>Workplace</strong> dropdown to choose which workplace to record under when you have several registered.
+              </li>
+              <li>
+                You can enter a <strong>Notes</strong> memo. It is saved when you leave the field (sometimes available before clock-in).
+              </li>
+            </ul>
+            <h3>Other actions</h3>
+            <ul>
+              <li>
+                <strong>Correct clock-in time</strong> — Adjust the most recent punch time.
+              </li>
+              <li>
+                <strong>Edit today</strong> — Open the daily detail screen to edit start/end times, breaks, and more.
+              </li>
+              <li>
+                <strong>?</strong> at the top — Explains how weekend/holiday punches affect totals (when using Japanese UI for holidays; see in-app help).
+              </li>
+              <li>
+                <strong>This month’s goal</strong> — If a goal amount is set for the workplace, a progress card appears. Tap to expand details.
+              </li>
+            </ul>
+          </section>
+
+          <section id="month" class="guide-section">
+            <h2>Monthly — review a month</h2>
+            <p>The Monthly tab shows a list and summary for the selected month.</p>
+            <ul>
+              <li>
+                Change <strong>year/month</strong> and <strong>summary scope</strong> (e.g. all workplaces, closing day) at the top, depending on workplace settings.
+              </li>
+              <li>
+                The summary shows <strong>days</strong>, <strong>hours worked</strong>, <strong>overtime</strong>, <strong>late night</strong>, <strong>total pay (estimate)</strong>, and more.
+              </li>
+              <li>Tap a date to open <strong>daily detail</strong> for that day.</li>
+              <li>
+                Tap <strong>Details</strong> for a breakdown (totals and per-workplace).
+              </li>
+              <li>You may move to the previous or next month with arrows or swipe.</li>
+              <li>Use <strong>+</strong> to add a record manually.</li>
+            </ul>
+          </section>
+
+          <section id="year" class="guide-section">
+            <h2>Yearly — annual trends</h2>
+            <p>The Yearly tab shows estimated income and goal progress for the year.</p>
+            <ul>
+              <li><strong>Yearly summary</strong> — Year-to-date total, annual goal, and progress.</li>
+              <li><strong>Monthly income chart</strong> — Estimated income per month and cumulative trend.</li>
+              <li><strong>Goal simulation</strong> — Year-end projection at your current pace and pace needed to reach your goal.</li>
+            </ul>
+          </section>
+
+          <section id="daily" class="guide-section">
+            <h2>Daily — edit one day</h2>
+            <p>
+              Fix punches or enter a full day manually. Open from a date on the monthly list or from <strong>Edit today</strong> on Home.
+            </p>
+            <ul>
+              <li>Select <strong>Workplace</strong> and <strong>Work pattern</strong>.</li>
+              <li>
+                Tap <strong>Start</strong> / <strong>End</strong> times to change them. Use the <strong>Next day</strong> toggle for shifts that end after midnight.
+              </li>
+              <li>Set <strong>Regular break</strong> and <strong>Late-night break</strong>.</li>
+              <li>
+                <strong>Leave flag</strong> — Tap <strong>?</strong> next to the label for an explanation.
+              </li>
+              <li>
+                <strong>Notes</strong> (single line) and tags such as early leave may be available.
+              </li>
+              <li>
+                Tap <strong>Save</strong> at the top to apply. If you change the date with unsaved edits, you will be asked to confirm.
+              </li>
+              <li>Swipe left/right or use side arrows to move to the previous or next day.</li>
+            </ul>
+          </section>
+
+          <section id="workplace" class="guide-section">
+            <h2>Workplaces</h2>
+            <p>
+              Go to <strong>Settings</strong> → <strong>Workplaces</strong> to list, add, and edit workplaces.
+            </p>
+            <ul>
+              <li>Tap <strong>+</strong> to add a workplace.</li>
+              <li>
+                For each workplace, set <strong>hourly wage</strong>, <strong>rounding</strong> (e.g. per minute), <strong>closing day</strong>, <strong>goal amount</strong>, default start/end times, break times, and more.
+              </li>
+              <li>Register separate workplaces if you work multiple jobs or sites.</li>
+            </ul>
+          </section>
+
+          <section id="pattern" class="guide-section">
+            <h2>Work patterns</h2>
+            <p>
+              Under <strong>Settings</strong> → <strong>Work patterns</strong>, register rules for shifts or pay rates and select them on the daily screen. Details depend on how you configure each pattern and workplace.
+            </p>
+          </section>
+
+          <section id="settings" class="guide-section">
+            <h2>Settings</h2>
+            <p>Main items on the Settings tab:</p>
+            <dl class="guide-dl">
+              <dt>Workplaces</dt>
+              <dd>List and edit workplaces (see above).</dd>
+              <dt>Work patterns</dt>
+              <dd>Register and edit patterns (see above).</dd>
+              <dt>Home screen widget</dt>
+              <dd>Workplace used for widget punches, optional monthly pay on widget (below).</dd>
+              <dt>App settings</dt>
+              <dd>Appearance, language, and other preferences.</dd>
+              <dt>Mail delivery settings</dt>
+              <dd>Export monthly data and share via the system share sheet (below).</dd>
+              <dt>Otsukare card (share card)</dt>
+              <dd>Optional shareable image of your work summary after clock-out (on/off and theme).</dd>
+              <dt>Backup &amp; restore</dt>
+              <dd>Optional cloud backup (below).</dd>
+            </dl>
+          </section>
+
+          <section id="widget" class="guide-section">
+            <h2>Home screen widget</h2>
+            <p>
+              On iPhone and Android you can add a home screen widget to punch in/out without opening the full app (steps and appearance vary by OS and device).
+            </p>
+            <ol class="guide-steps">
+              <li>Add the Time Card widget from your device’s home screen settings.</li>
+              <li>
+                In the app: <strong>Settings</strong> → <strong>Home screen widget</strong> — choose automatic or fixed workplace for punches, and whether to show estimated monthly pay on the widget.
+              </li>
+              <li>Use the widget buttons to clock in or out.</li>
+            </ol>
+            <p class="guide-note">
+              Widget layout and size follow your OS. If the widget does not work as expected, use the Home tab inside the app.
+            </p>
+          </section>
+
+          <section id="backup" class="guide-section">
+            <h2>Backup &amp; restore</h2>
+            <p>
+              <strong>Settings</strong> → <strong>Backup &amp; restore</strong> lets you back up data when <em>you</em> choose. Nothing is sent to the cloud automatically.
+            </p>
+            <ul>
+              <li>
+                <strong>Android</strong> — Back up and restore via Google Drive (Google sign-in may be required).
+              </li>
+              <li>
+                <strong>iPhone</strong> — Back up and restore via iCloud (iPhone to iPhone). To move from Android to iPhone, check the in-app instructions for Google Drive.
+              </li>
+              <li>We recommend backing up before changing devices or reinstalling the app.</li>
+            </ul>
+          </section>
+
+          <section id="export" class="guide-section">
+            <h2>Export &amp; share (CSV)</h2>
+            <p>
+              From <strong>Settings</strong> → <strong>Mail delivery settings</strong> (and related screens), you can export monthly data and share it via Mail, Files, or other apps. Follow the on-screen instructions for format and destination.
+            </p>
+            <p class="guide-note">
+              Sharing uses your device’s apps only. The developer does not receive your exported files or email content.
+            </p>
+          </section>
+
+          <section id="faq" class="guide-section">
+            <h2>FAQ</h2>
+            <dl class="guide-dl">
+              <dt>Is the pay shown my final salary?</dt>
+              <dd>
+                No. It is an <strong>estimate</strong> from your hourly settings. Actual pay and invoicing follow your employer or contract.
+              </dd>
+              <dt>I punched the wrong time</dt>
+              <dd>
+                Use <strong>Correct clock-in time</strong> on Home, or open <strong>Daily detail</strong> for that day, fix start/end times, and tap <strong>Save</strong>.
+              </dd>
+              <dt>What happens if I delete the app?</dt>
+              <dd>
+                Data on the device may be lost. Back up first using <strong>Backup &amp; restore</strong>.
+              </dd>
+              <dt>How do I switch to Japanese?</dt>
+              <dd>
+                Open <strong>Settings</strong> → <strong>App settings</strong> and change the app or device language if available.
+              </dd>
+            </dl>
+          </section>
+
+          <section id="notes" class="guide-section">
+            <h2>Important notes</h2>
+            <ul>
+              <li>Features and layouts may change in app updates.</li>
+              <li>This guide reflects the app as of 2026 and may not match the latest UI.</li>
+              <li>
+                Support:
+                <a href="mailto:stallions.0721@gmail.com">stallions.0721@gmail.com</a>
+              </li>
+              <li>
+                <a href="privacy.html">Privacy policy</a> (redirects to the published policy page)
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <p class="guide-back">
+          <a class="btn btn-secondary" href="index.html">Back to home page</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container inner">
+        <span>© Time Card</span>
+        <span>
+          <a href="help-en.html">Guide</a>
+          ·
+          <a href="help.html">日本語</a>
+          ·
+          <a href="privacy.html">Privacy</a>
+          ·
+          <a href="mailto:stallions.0721@gmail.com">Contact</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

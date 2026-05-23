@@ -26,10 +26,12 @@ cd ../timecard-app-site && git add -A && git commit -m "Update website" && git p
 
 | ファイル | 内容 |
 |----------|------|
-| `index.html` | 紹介ページ本体 |
+| `index.html` | 紹介ページ（日本語） |
+| `index-en.html` | 紹介ページ（英語） |
 | `help.html` | 使い方ガイド（日本語） |
 | `help-en.html` | 使い方ガイド（英語） |
-| `privacy.html` | ブログのプライバシーポリシーへリダイレクト |
+| `privacy.html` | ブログのプライバシーポリシーへリダイレクト（日本語） |
+| `privacy-en.html` | プライバシーポリシー（英語・サイト内） |
 | `app-ads.txt` | AdMob 用（サイトの**ルート**に配置） |
 | `assets/badges/` | 公式ストアバッジ |
 | `assets/screenshots/` | 画面キャプチャ |
@@ -64,7 +66,9 @@ cd ../timecard-app-site && git add -A && git commit -m "Update website" && git p
 |------|------------------------------------------|
 | 開発者サイト・紹介 | `https://stallions0721.github.io/timecard-app-site/` |
 | app-ads.txt | `https://stallions0721.github.io/timecard-app-site/app-ads.txt` |
-| プライバシーポリシー | https://stallions0721.blogspot.com/2026/04/2026412-time-card-1.html |
+| プライバシーポリシー（日本語） | https://stallions0721.blogspot.com/2026/04/2026412-time-card-1.html |
+| プライバシーポリシー（英語） | `…/privacy-en.html`（例: `https://stallions0721.github.io/timecard-app-site/privacy-en.html`） |
+| 英語トップ | `…/index-en.html` |
 
 ## ローカル確認
 

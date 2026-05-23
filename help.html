@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>使い方ガイド — タイムカード（Time Card）</title>
+    <meta
+      name="description"
+      content="タイムカードアプリの画面ごとの使い方。打刻、月次・年次の確認、勤務先設定、バックアップ、ウィジェットなど。"
+    />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/app-icon.png" width="40" height="40" alt="" />
+          <span>タイムカード</span>
+        </a>
+        <nav class="nav" aria-label="サイト内リンク">
+          <a href="index.html">トップ</a>
+          <a href="help.html" aria-current="page">使い方</a>
+          <a href="index.html#download">ダウンロード</a>
+          <a href="privacy.html">プライバシー</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="guide-page">
+      <div class="container">
+        <header class="guide-header">
+          <p class="eyebrow">使い方ガイド</p>
+          <h1>画面の見方と基本的な操作</h1>
+          <p class="lead">
+            パート・フリーランスなど、時間契約でお仕事をしている方向けの勤怠アプリ「タイムカード」の操作説明です。画面名は日本語 UI を基準に記載しています（英語表示時はメニュー名が異なります）。
+          </p>
+        </header>
+
+        <nav class="guide-toc" aria-label="目次">
+          <h2 class="guide-toc-title">目次</h2>
+          <ol>
+            <li><a href="#start">はじめに</a></li>
+            <li><a href="#tabs">画面構成（下部タブ）</a></li>
+            <li><a href="#home">ホーム — 打刻</a></li>
+            <li><a href="#month">月次 — 1ヶ月の確認</a></li>
+            <li><a href="#year">年次 — 年間の推移</a></li>
+            <li><a href="#daily">日次 — 1日の編集</a></li>
+            <li><a href="#workplace">勤務先の登録</a></li>
+            <li><a href="#pattern">就業パターン</a></li>
+            <li><a href="#settings">設定</a></li>
+            <li><a href="#widget">ホーム画面ウィジェット</a></li>
+            <li><a href="#backup">バックアップと復元</a></li>
+            <li><a href="#export">データの共有（CSV など）</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#notes">ご利用上の注意</a></li>
+          </ol>
+        </nav>
+
+        <article class="guide-body">
+          <section id="start" class="guide-section">
+            <h2>はじめに</h2>
+            <p>
+              本アプリは、<strong>いつ働いたか</strong>を端末内に記録し、時給設定に基づく<strong>給与の目安</strong>を表示するためのツールです。法人向けの勤怠システムの代替ではなく、個人が自分用に記録・確認する用途を想定しています。
+            </p>
+            <ol class="guide-steps">
+              <li>ストアからアプリをインストールする。</li>
+              <li>
+                <strong>設定</strong>タブ → <strong>勤務先</strong>で、勤務先名・時給などを登録する（初回は案内ダイアログが出る場合があります）。
+              </li>
+              <li>
+                <strong>ホーム</strong>タブで<strong>出勤</strong>・<strong>退勤</strong>を打刻する。
+              </li>
+              <li>
+                <strong>月次</strong>タブで、その月の稼働時間や給与の目安を確認する。
+              </li>
+            </ol>
+            <p class="guide-note">
+              データは原則として<strong>お使いの端末内</strong>に保存されます。機種変更時は、後述の<strong>バックアップと復元</strong>の利用を推奨します。
+            </p>
+          </section>
+
+          <section id="tabs" class="guide-section">
+            <h2>画面構成（下部タブ）</h2>
+            <p>画面下部のタブで主要機能に移動します。</p>
+            <dl class="guide-dl">
+              <dt>ホーム</dt>
+              <dd>今日の打刻（出勤・退勤）、勤務先の選択、今月の目標進捗など。</dd>
+              <dt>月次</dt>
+              <dd>月単位の一覧・集計。日ごとの始業・終業、給与の目安を確認。</dd>
+              <dt>年次</dt>
+              <dd>年間の収入グラフ、目標に対する進捗のシミュレーション。</dd>
+              <dt>設定</dt>
+              <dd>勤務先、就業パターン、ウィジェット、バックアップ、アプリの基本設定など。</dd>
+            </dl>
+          </section>
+
+          <section id="home" class="guide-section">
+            <h2>ホーム — 打刻</h2>
+            <h3>出勤・退勤</h3>
+            <ul>
+              <li>
+                画面中央の大きなボタンで<strong>出勤</strong>または<strong>退勤</strong>を記録します（現在の状態に応じて表示が切り替わります）。
+              </li>
+              <li>
+                <strong>勤務先</strong>のプルダウンで、記録先の勤務先を選びます。複数登録している場合に切り替えます。
+              </li>
+              <li>
+                <strong>備考</strong>にメモを入力できます。入力後にフォーカスを外すと保存されます（出勤前でも入力可能な場合があります）。
+              </li>
+            </ul>
+            <h3>その他の操作</h3>
+            <ul>
+              <li>
+                <strong>出勤時刻を修正</strong> — 直前の打刻時刻を調整します。
+              </li>
+              <li>
+                <strong>今日を編集</strong> — その日の詳細画面（日次）を開き、始業・終業・休憩などを編集します。
+              </li>
+              <li>
+                画面上部の <strong>?</strong> — 休日・祝日の打刻と集計の関係についての説明を表示します（日本語 UI 時）。
+              </li>
+              <li>
+                <strong>今月の目標</strong> — 勤務先に目標額を設定している場合、進捗カードが表示されます。タップで詳細を展開できます。
+              </li>
+            </ul>
+          </section>
+
+          <section id="month" class="guide-section">
+            <h2>月次 — 1ヶ月の確認</h2>
+            <p>
+              月次タブでは、選択した月の勤怠一覧とサマリーを確認できます。
+            </p>
+            <ul>
+              <li>
+                上部で<strong>年月</strong>や<strong>集計対象</strong>（全体・締め日など、勤務先設定に応じます）を切り替えられます。
+              </li>
+              <li>
+                サマリーには<strong>日数</strong>・<strong>稼働</strong>・<strong>残業</strong>・<strong>深夜</strong>・<strong>給与合計</strong>（目安）などが表示されます。
+              </li>
+              <li>
+                日付をタップすると、その日の<strong>日次編集</strong>画面へ移動します。
+              </li>
+              <li>
+                <strong>詳細</strong>から、月次集計の内訳（総計・勤務先別）を確認できます。
+              </li>
+              <li>
+                左右の矢印やスワイプで、前月・翌月に移動できる場合があります。
+              </li>
+              <li>
+                <strong>＋</strong>ボタンで、手動で勤怠を追加することもできます。
+              </li>
+            </ul>
+          </section>
+
+          <section id="year" class="guide-section">
+            <h2>年次 — 年間の推移</h2>
+            <p>年次タブでは、1年単位での収入の目安と目標の進捗を確認できます。</p>
+            <ul>
+              <li>
+                <strong>年間サマリー</strong> — 年間累計と年間目標、進捗率を表示します。
+              </li>
+              <li>
+                <strong>月次収入グラフ</strong> — 月ごとの収入の目安と累計の推移をグラフで表示します。
+              </li>
+              <li>
+                <strong>目標シミュレーション</strong> — 現状ペースでの年末見込みや、目標達成に必要なペースの目安を表示します。
+              </li>
+            </ul>
+          </section>
+
+          <section id="daily" class="guide-section">
+            <h2>日次 — 1日の編集</h2>
+            <p>
+              打刻の修正や、手入力で1日分を整える画面です。月次一覧から日付を選ぶか、ホームの「今日を編集」から開けます。
+            </p>
+            <ul>
+              <li>
+                <strong>勤務先</strong>・<strong>就業パターン</strong>を選びます。
+              </li>
+              <li>
+                <strong>始業</strong>・<strong>終業</strong>の時刻をタップして変更します。<strong>翌日</strong>トグルで日付をまたぐ終業に対応します。
+              </li>
+              <li>
+                <strong>通常休憩</strong>・<strong>深夜休憩</strong>を設定します。
+              </li>
+              <li>
+                <strong>休暇フラグ</strong> — ラベル横の <strong>?</strong> で説明を確認できます。
+              </li>
+              <li>
+                <strong>備考</strong>（1行）や、早退・直行・有給などのタグを利用できます。
+              </li>
+              <li>
+                画面上部の<strong>保存</strong>で確定します。編集後に日付を変えると、未保存の内容がある場合は確認が表示されます。
+              </li>
+              <li>
+                <strong>左右スワイプ</strong>または画面端の矢印で、前日・翌日へ移動できます。
+              </li>
+            </ul>
+          </section>
+
+          <section id="workplace" class="guide-section">
+            <h2>勤務先の登録</h2>
+            <p>
+              <strong>設定</strong> → <strong>勤務先</strong>から、勤務先の一覧・登録・編集ができます。
+            </p>
+            <ul>
+              <li>
+                <strong>＋</strong>で新しい勤務先を追加します。
+              </li>
+              <li>
+                各勤務先で、<strong>時給</strong>・<strong>丸め単位</strong>（1分単位など）・<strong>締め日</strong>・<strong>目標額</strong>・標準の始業・終業時刻・休憩時間などを設定します。
+              </li>
+              <li>
+                複数のバイト先や現場を掛け持ちする場合は、勤務先ごとに分けて登録します。
+              </li>
+            </ul>
+          </section>
+
+          <section id="pattern" class="guide-section">
+            <h2>就業パターン</h2>
+            <p>
+              <strong>設定</strong> → <strong>就業パターン</strong>で、シフトや勤務形態に応じた単価・時間帯のルールを登録し、日次画面で「就業パターン」として選べます。詳細は勤務先・パターンの設定内容に依存します。
+            </p>
+          </section>
+
+          <section id="settings" class="guide-section">
+            <h2>設定</h2>
+            <p>設定タブの主な項目です。</p>
+            <dl class="guide-dl">
+              <dt>勤務先</dt>
+              <dd>勤務先一覧・時給などの編集（上記）。</dd>
+              <dt>就業パターン</dt>
+              <dd>パターンの登録・編集（上記）。</dd>
+              <dt>ホーム画面ウィジェット</dt>
+              <dd>ウィジェット打刻用の勤務先、月次給与の表示など（下記）。</dd>
+              <dt>アプリの基本設定</dt>
+              <dd>表示デザイン、言語など。</dd>
+              <dt>メール配信設定</dt>
+              <dd>月次データのエクスポート・共有（下記）。</dd>
+              <dt>お疲れ様カード</dt>
+              <dd>退勤後などに勤務実績を画像で共有する機能（ON/OFF・デザイン）。</dd>
+              <dt>バックアップと復元</dt>
+              <dd>クラウドへのバックアップ（下記）。</dd>
+            </dl>
+          </section>
+
+          <section id="widget" class="guide-section">
+            <h2>ホーム画面ウィジェット</h2>
+            <p>
+              iPhone / Android のホーム画面にウィジェットを追加すると、端末のホームから打刻操作ができる場合があります（OS・端末により手順や見た目は異なります）。
+            </p>
+            <ol class="guide-steps">
+              <li>端末の設定で、本アプリのウィジェットをホーム画面に追加します。</li>
+              <li>
+                アプリ内 <strong>設定</strong> → <strong>ホーム画面ウィジェット</strong>で、打刻に使う勤務先（自動／固定）や、ウィジェットに月次給与の目安を表示するかを選びます。
+              </li>
+              <li>ウィジェット上のボタンから出勤・退勤などを実行します。</li>
+            </ol>
+            <p class="guide-note">
+              ウィジェットの見た目・サイズは OS の仕様に従います。うまく動作しない場合は、アプリ本体のホーム画面から打刻してください。
+            </p>
+          </section>
+
+          <section id="backup" class="guide-section">
+            <h2>バックアップと復元</h2>
+            <p>
+              <strong>設定</strong> → <strong>バックアップと復元</strong>から、任意でデータをバックアップできます。<strong>自動ではクラウドに送信されません。</strong>ご自身で操作したときのみ保存されます。
+            </p>
+            <ul>
+              <li>
+                <strong>Android</strong> — Google ドライブへのバックアップ・復元（Google アカウントでのサインインが必要な場合があります）。
+              </li>
+              <li>
+                <strong>iPhone</strong> — iCloud へのバックアップ・復元（iPhone 同士）。Android 端末から iPhone へ移す場合は Google ドライブ経由の手順をご確認ください。
+              </li>
+              <li>
+                機種変更やアプリ再インストール前に、必ずバックアップを取ることを推奨します。
+              </li>
+            </ul>
+          </section>
+
+          <section id="export" class="guide-section">
+            <h2>データの共有（CSV など）</h2>
+            <p>
+              <strong>設定</strong> → <strong>メール配信設定</strong>などから、月次データをエクスポートし、端末の共有シート（メール・ファイルアプリなど）で送ることができます。送信先や形式は画面の案内に従ってください。
+            </p>
+            <p class="guide-note">
+              共有はお使いの端末の機能経由であり、開発者がメール内容を受け取る仕組みではありません。
+            </p>
+          </section>
+
+          <section id="faq" class="guide-section">
+            <h2>よくある質問</h2>
+            <dl class="guide-dl">
+              <dt>表示されている給与は確定額ですか？</dt>
+              <dd>
+                いいえ。勤務先に設定した時給などに基づく<strong>目安</strong>です。実際の給与・請求は勤務先・契約のルールに従ってください。
+              </dd>
+              <dt>打刻を間違えました</dt>
+              <dd>
+                ホームの「出勤時刻を修正」、または該当日の<strong>日次</strong>画面で始業・終業時刻を修正し、<strong>保存</strong>してください。
+              </dd>
+              <dt>アプリを削除するとデータは？</dt>
+              <dd>
+                端末内のデータは消える可能性があります。事前に<strong>バックアップと復元</strong>をご利用ください。
+              </dd>
+              <dt>英語で表示したい</dt>
+              <dd>
+                <strong>設定</strong> → <strong>アプリの基本設定</strong>から、端末またはアプリの言語設定を変更できる場合があります。
+              </dd>
+            </dl>
+          </section>
+
+          <section id="notes" class="guide-section">
+            <h2>ご利用上の注意</h2>
+            <ul>
+              <li>機能・画面レイアウトはアップデートにより変更されることがあります。</li>
+              <li>本ページの内容は 2026 年時点の説明です。最新の UI と異なる場合があります。</li>
+              <li>
+                不具合・ご要望:
+                <a href="mailto:stallions.0721@gmail.com">stallions.0721@gmail.com</a>
+              </li>
+              <li>
+                <a href="privacy.html">プライバシーポリシー</a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <p class="guide-back">
+          <a class="btn btn-secondary" href="index.html">トップページへ戻る</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container inner">
+        <span>© Time Card（タイムカード）</span>
+        <span>
+          <a href="help.html">使い方</a>
+          ·
+          <a href="privacy.html">プライバシーポリシー</a>
+          ·
+          <a href="mailto:stallions.0721@gmail.com">お問い合わせ</a>
+        </span>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -27,6 +27,7 @@ cd ../timecard-app-site && git add -A && git commit -m "Update website" && git p
 | ファイル | 内容 |
 |----------|------|
 | `index.html` | 紹介ページ本体 |
+| `help.html` | 使い方ガイド（画面ごとの操作説明） |
 | `privacy.html` | ブログのプライバシーポリシーへリダイレクト |
 | `app-ads.txt` | AdMob 用（サイトの**ルート**に配置） |
 | `assets/badges/` | 公式ストアバッジ |

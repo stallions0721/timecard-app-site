@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+# GitHub Pages のプロジェクトサイトでは、ホスト直下
+# https://stallions0721.github.io/robots.txt も参照されます。
+# サイトマップは Search Console への登録を推奨します。
+Sitemap: https://stallions0721.github.io/timecard-app-site/sitemap.xml

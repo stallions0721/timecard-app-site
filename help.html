@@ -3,14 +3,138 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>使い方ガイド — タイムカード（Time Card）</title>
+    <title>タイムカードの使い方｜打刻・月次確認・勤務先設定のガイド</title>
     <meta
       name="description"
-      content="タイムカードアプリの画面ごとの使い方。打刻、月次・年次の確認、勤務先設定、バックアップ、ウィジェットなど。"
+      content="無料のタイムカード・勤怠アプリの使い方。ワンタップ打刻、月次一覧・カレンダー、年次、勤務先の時給設定、バックアップ、ホーム画面ウィジェットまで画面ごとに解説。"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Time Card" />
+    <link
+      rel="canonical"
+      href="https://stallions0721.github.io/timecard-app-site/help.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://stallions0721.github.io/timecard-app-site/help.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://stallions0721.github.io/timecard-app-site/help-en.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://stallions0721.github.io/timecard-app-site/help.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="タイムカード" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:title"
+      content="タイムカードの使い方｜打刻・月次確認・勤務先設定"
+    />
+    <meta
+      property="og:description"
+      content="ワンタップ打刻から月次・年次、勤務先設定、バックアップまで。無料の勤怠アプリ「タイムカード」の操作ガイド。"
+    />
+    <meta
+      property="og:url"
+      content="https://stallions0721.github.io/timecard-app-site/help.html"
+    />
+    <meta
+      property="og:image"
+      content="https://stallions0721.github.io/timecard-app-site/assets/og-image-ja.png"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="タイムカードの使い方｜打刻・月次確認・勤務先設定"
+    />
+    <meta
+      name="twitter:description"
+      content="無料の勤怠アプリ「タイムカード」の画面ごとの使い方。"
+    />
+    <meta
+      name="twitter:image"
+      content="https://stallions0721.github.io/timecard-app-site/assets/og-image-ja.png"
     />
     <meta name="theme-color" content="#2563eb" />
     <link rel="icon" type="image/png" href="assets/app-icon.png" />
     <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@graph": [
+          {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "タイムカード",
+                "item": "https://stallions0721.github.io/timecard-app-site/"
+              },
+              {
+                "@type": "ListItem",
+                "position": 2,
+                "name": "使い方ガイド",
+                "item": "https://stallions0721.github.io/timecard-app-site/help.html"
+              }
+            ]
+          },
+          {
+            "@type": "FAQPage",
+            "mainEntity": [
+              {
+                "@type": "Question",
+                "name": "表示されている給与は確定額ですか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "いいえ。勤務先に設定した時給などに基づく目安です。実際の給与・請求は勤務先・契約のルールに従ってください。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "打刻を間違えました",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "ホームの「出勤時刻を修正」、または該当日の日次画面で始業・終業時刻を修正し、保存してください。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "アプリを削除するとデータは？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "端末内のデータは消える可能性があります。事前にバックアップと復元をご利用ください。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "英語で表示したい",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "設定 → アプリの基本設定から、端末またはアプリの言語設定を変更できる場合があります。"
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "広告を一時的に非表示にできますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "はい。短い動画広告を視聴すると、48時間アプリ内の広告を非表示にできます。ホームの「広告オフ」、月次のメニュー、設定などから開始できます。"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header class="site-header">
@@ -172,6 +296,18 @@
                 カレンダー表示では、日本語 UI 時に<strong>国民の祝日名</strong>が日付セルに表示されます。勤務先の<strong>一括登録</strong>も利用できます。
               </li>
             </ul>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/month-calendar.png"
+                  alt="月次カレンダー。日付ごとの稼働時間と祝日名"
+                  width="240"
+                  height="521"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>カレンダーでは、日ごとの稼働と祝日名、給与合計を確認できます。</figcaption>
+            </figure>
           </section>
 
           <section id="year" class="guide-section">
@@ -283,6 +419,18 @@
             <p class="guide-note">
               ウィジェットの見た目・サイズは OS の仕様に従います。うまく動作しない場合は、アプリ本体のホーム画面から打刻してください。
             </p>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/widget-settings.png"
+                  alt="ホームとウィジェット設定。打刻先と月次給与の表示切替"
+                  width="240"
+                  height="521"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>打刻先の勤務先と、ウィジェット上の月次給与の表示／非表示を選べます。</figcaption>
+            </figure>
           </section>
 
           <section id="backup" class="guide-section">

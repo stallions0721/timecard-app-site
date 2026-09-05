@@ -100,9 +100,11 @@ python3 -m http.server 8080
 1. [Google Search Console](https://search.google.com/search-console) を開く
 2. **URL プレフィックス** で次を追加する  
    `https://stallions0721.github.io/timecard-app-site/`
-3. 所有権の確認は **HTML タグ** が簡単です。発行された  
-   `<meta name="google-site-verification" content="……">`  
-   を `website/index.html` と `website/index-en.html` の `<head>` に貼り、公開リポジトリへ再同期する
+3. 所有権の確認は、次のどちらかです（混在させない）。
+   - **HTML ファイル**（いま採用）: `website/google6cbbc4937b33be5f.html` をサイト直下に置く
+   - **HTML タグ**: Search Console で「HTML タグ」を選び、発行された  
+     `<meta name="google-site-verification" content="……">`  
+     を `index.html` / `index-en.html` の `<head>` に貼る（ファイル名を content にしても確認できません）
 4. 確認後、**サイトマップ** に次を送信する  
    `https://stallions0721.github.io/timecard-app-site/sitemap.xml`
 5. 「URL 検査」でトップと `help.html` をインデックス登録する

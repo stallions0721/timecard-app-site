@@ -109,7 +109,7 @@ python3 -m http.server 8080
    `https://stallions0721.github.io/timecard-app-site/sitemap.xml`
 5. 「URL 検査」でトップと `help.html` をインデックス登録する
 
-Bing も同様に [Bing Webmaster Tools](https://www.bing.com/webmasters) へサイトマップを送るとよいです。
+[Bing Webmaster Tools](https://www.bing.com/webmasters) も同様です。所有権確認用の `website/BingSiteAuth.xml` をサイト直下に置き、確認後に同じサイトマップを送信します。
 
 ### 2. 反映までの目安
 

@@ -293,20 +293,32 @@
                 <strong>＋</strong>ボタンで、手動で勤怠を追加することもできます。
               </li>
               <li>
-                カレンダー表示では、日本語 UI 時に<strong>国民の祝日名</strong>が日付セルに表示されます。勤務先の<strong>一括登録</strong>も利用できます。
+                カレンダー表示では、各日に<strong>始業から終業の時間帯</strong>を出します。稼働時間への切り替えは、右上メニューか<strong>アプリの基本設定</strong>の「カレンダーの時間表示」です。
+              </li>
+              <li>
+                日本語 UI では<strong>国民の祝日名</strong>が日付セルに表示されます。英語 UI では祝日名は出しません。
+              </li>
+              <li>
+                <strong>シフト予定を使う</strong>（アプリの基本設定）はオフが初期状態です。オンにすると、今日よりあとの日でまだ実績がない登録は予定になります。出勤すると実績になります。給与合計は実績だけを数えます。
+              </li>
+              <li>
+                予定だけの日は、カレンダーでは破線、一覧では「予」です。一括登録では確認のうえ、勤務先の時刻で実績に置き換えられます。
+              </li>
+              <li>
+                勤務先の<strong>一括登録</strong>も利用できます。
               </li>
             </ul>
             <figure class="guide-shot">
               <div class="phone-frame">
                 <img
                   src="assets/screenshots/ja/month-calendar.png"
-                  alt="月次カレンダー。日付ごとの稼働時間と祝日名"
+                  alt="月次カレンダー。日付ごとの時間帯と祝日名"
                   width="240"
                   height="521"
                   loading="lazy"
                 />
               </div>
-              <figcaption>カレンダーでは、日ごとの稼働と祝日名、給与合計を確認できます。</figcaption>
+              <figcaption>カレンダーでは、日ごとの時間帯と祝日名、給与合計を確認できます。</figcaption>
             </figure>
           </section>
 
@@ -392,7 +404,7 @@
               <dt>ホーム画面ウィジェット</dt>
               <dd>ウィジェット打刻用の勤務先、月次給与の表示など（下記）。</dd>
               <dt>アプリの基本設定</dt>
-              <dd>表示デザイン、言語、<strong>月次の表示</strong>（一覧 / カレンダー）など。</dd>
+              <dd>表示デザイン、言語、<strong>月次の表示</strong>（一覧 / カレンダー）、<strong>カレンダーの時間表示</strong>、<strong>シフト予定</strong>など。</dd>
               <dt>メール配信設定</dt>
               <dd>月次データのエクスポート・共有（下記）。</dd>
               <dt>お疲れ様カード</dt>

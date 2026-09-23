@@ -178,7 +178,7 @@
                 "name": "月次はカレンダーでも見られますか？",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "はい。月次タブで一覧とカレンダーを切り替えられます。カレンダーでは日付ごとの稼働時間、祝日名、給与合計を確認できます。"
+                  "text": "はい。月次タブで一覧とカレンダーを切り替えられます。カレンダーでは始業から終業の時間帯、日本語表示のときの祝日名、給与合計を確認できます。時間帯と稼働時間は切り替えられます。"
                 }
               }
             ]
@@ -278,7 +278,7 @@
                 src="assets/screenshots/ja/month-calendar.png"
                 width="336"
                 height="730"
-                alt="月次カレンダー：日ごとの稼働時間と給与合計"
+                alt="月次カレンダー：日ごとの時間帯と給与合計"
               />
             </figure>
           </div>
@@ -318,28 +318,31 @@
         <div class="container">
           <h2 class="section-title">最新情報</h2>
           <p class="section-lead">
-            Ver. 3.2.0 の主なアップデートです。ストアの「最新情報」と同じ内容を掲載しています。
+            Ver. 3.4.0 の主なアップデートです。ストアの「最新情報」と同じ内容を掲載しています。
           </p>
           <div class="whats-new-grid">
             <article class="whats-new-card">
               <header class="whats-new-header">
-                <span class="whats-new-version">Ver. 3.2.0</span>
-                <span class="whats-new-date">2026年7月</span>
+                <span class="whats-new-version">Ver. 3.4.0</span>
+                <span class="whats-new-date">2026年9月</span>
               </header>
               <ul class="whats-new-list">
                 <li>
-                  <strong>月次カレンダー</strong>
-                  — 月次画面にカレンダー表示を追加。一覧との切り替えもできます。日付ごとの稼働、祝日名、給与合計が一目で分かります。
+                  <strong>カレンダーの時間帯</strong>
+                  — 各日に始業から終業（例: 09–16）を表示します。稼働時間への切り替えは、月次画面のメニューかアプリ基本設定からできます。
                 </li>
                 <li>
-                  <strong>広告オフ特典</strong>
-                  — 短い動画広告を視聴すると、48時間アプリ内の広告を非表示にできます。
+                  <strong>シフト予定（任意）</strong>
+                  — 「シフト予定を使う」はオフが初期状態です。オンにすると、未来の勤務を予定として登録できます。オフのときは今までどおり実績として登録します。
                 </li>
                 <li>
-                  <strong>カレンダーの使いやすさ</strong>
-                  — 祝日名の表示や、勤務先の一括登録がカレンダー表示でも使えます。
+                  <strong>予定と実績の見分け</strong>
+                  — 予定だけの日は、カレンダーでは破線、一覧では「予」です。給与合計は実績だけを数えます。
                 </li>
-                <li>その他、表示と操作性の改善</li>
+                <li>
+                  <strong>一括登録</strong>
+                  — 予定だけの日があるときは確認のうえ、勤務先の時刻で実績に置き換えられます。実績がある日と有給の日は上書きしません。
+                </li>
               </ul>
               <p class="whats-new-more">
                 操作の詳細は
@@ -353,7 +356,7 @@
                   src="assets/screenshots/ja/month-calendar.png"
                   width="230"
                   height="500"
-                  alt="2026年9月の月次カレンダー。稼働80時間、給与合計10万2100円"
+                  alt="2026年9月の月次カレンダー。時間帯と給与合計10万2100円"
                   loading="lazy"
                 />
               </div>
@@ -385,7 +388,7 @@
             <article class="feature">
               <h3>月次一覧・カレンダー</h3>
               <p>
-                一覧とカレンダーを切り替え。日ごとの稼働、残業・深夜、祝日名、給与の目安まで確認できます。
+                一覧とカレンダーを切り替え。日ごとの時間帯や稼働、残業・深夜、祝日名、給与の目安まで確認できます。シフト予定は必要なときだけオンにできます。
               </p>
             </article>
             <article class="feature">
@@ -457,7 +460,7 @@
             <details class="faq-item">
               <summary>月次はカレンダーでも見られますか？</summary>
               <p>
-                はい。月次タブで<strong>一覧</strong>と<strong>カレンダー</strong>を切り替えられます。カレンダーでは日付ごとの稼働時間、祝日名、給与合計を確認できます。
+                はい。月次タブで<strong>一覧</strong>と<strong>カレンダー</strong>を切り替えられます。カレンダーでは始業から終業の時間帯、日本語表示のときの祝日名、給与合計を確認できます。時間帯と稼働時間は切り替えられます。
               </p>
             </details>
           </div>
@@ -523,7 +526,7 @@
               <figure class="phone-frame">
                 <img
                   src="assets/screenshots/ja/month-calendar.png"
-                  alt="月次カレンダー。日付ごとの稼働時間、祝日、給与合計"
+                  alt="月次カレンダー。日付ごとの時間帯、祝日、給与合計"
                   loading="lazy"
                   width="390"
                   height="847"
@@ -536,7 +539,8 @@
                   一覧と同じ集計を、カレンダーでも確認できます。右上のアイコンや設定から切り替えられます。
                 </p>
                 <ul>
-                  <li>日付セルにその日の稼働時間と勤務先アイコン</li>
+                  <li>日付セルにその日の時間帯と勤務先の色</li>
+                  <li>稼働時間への切り替えも、メニューからできます</li>
                   <li>日本語表示では国民の祝日名も表示</li>
                   <li>給与合計や残業・深夜も、一覧と同じサマリーで確認</li>
                 </ul>

@@ -275,7 +275,7 @@
             <h3>Common actions</h3>
             <ul>
               <li>
-                Change <strong>year/month</strong> and <strong>summary scope</strong> (e.g. all workplaces, closing day) at the top, depending on workplace settings.
+                Change <strong>year/month</strong> and <strong>totals grouped by</strong> at the top. In App settings, choose <strong>Workplace</strong> or <strong>Cutoff day</strong>. Workplace uses that workplace’s cutoff period. Cutoff day groups every workplace that shares a cutoff. The switch is hidden when you have only one workplace. New installs start on Workplace. If you updated from an earlier version, the previous cutoff grouping stays selected.
               </li>
               <li>
                 The summary shows <strong>days</strong>, <strong>hours worked</strong>, <strong>overtime</strong>, <strong>late night</strong>, <strong>total pay (estimate)</strong>, and more.
@@ -323,6 +323,7 @@
               <li><strong>Yearly summary</strong> — Year-to-date total, annual goal, and progress.</li>
               <li><strong>Monthly income chart</strong> — Estimated income per month and cumulative trend.</li>
               <li><strong>Goal simulation</strong> — Year-end projection at your current pace and pace needed to reach your goal.</li>
+              <li><strong>Totals grouped by</strong> — Same as Month: switch the year between workplace and cutoff day (Ver. 3.5.0 and later).</li>
             </ul>
           </section>
 
@@ -382,7 +383,7 @@
               <dt>Home screen widget</dt>
               <dd>Workplace used for widget punches, optional monthly pay on widget (below).</dd>
               <dt>App settings</dt>
-              <dd>Appearance, language, <strong>monthly view</strong> (list / calendar), <strong>calendar time display</strong>, and <strong>planned shifts</strong>.</dd>
+              <dd>Appearance, language, <strong>totals grouped by</strong> (workplace / cutoff day), <strong>monthly view</strong> (list / calendar), <strong>calendar time display</strong>, and <strong>planned shifts</strong>.</dd>
               <dt>Mail delivery settings</dt>
               <dd>Export monthly data and share via the system share sheet (below).</dd>
               <dt>Otsukare card (share card)</dt>
@@ -397,10 +398,39 @@
           <section id="widget" class="guide-section">
             <h2>Home screen widget</h2>
             <p>
+              Besides the punch widget, Ver. 3.5.0 adds a <strong>shift calendar</strong>. In the widget gallery it is listed as <strong>シフトカレンダー</strong>.
+            </p>
+            <h3>Shift calendar</h3>
+            <ul>
+              <li>Long-press the Home Screen and add シフトカレンダー.</li>
+              <li>
+                On iPhone, medium shows <strong>this week</strong> (days worked and total hours) and large shows <strong>this month</strong>. Android shows this month.
+              </li>
+              <li>The grid is the calendar month. Each day shows a start-to-end range, and hours worked when the cell has room.</li>
+              <li>Japanese public holiday names appear only when the app language is Japanese.</li>
+              <li>Tap a day to open that day for editing.</li>
+              <li>
+                Estimated pay in the corner uses the same show/hide setting as the punch widget. Hidden pay appears as ***.
+              </li>
+            </ul>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/en/shift-calendar.png"
+                  alt="Home Screen shift calendar for October 2026 with daily time ranges and hidden pay"
+                  width="240"
+                  height="522"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>The large size shows this month. Hidden pay appears as *** in the corner.</figcaption>
+            </figure>
+            <h3>Punch widget</h3>
+            <p>
               On iPhone and Android you can add a home screen widget to punch in/out without opening the full app (steps and appearance vary by OS and device).
             </p>
             <ol class="guide-steps">
-              <li>Add the Time Card widget from your device’s home screen settings.</li>
+              <li>Add the Time Card punch widget from your device’s home screen settings.</li>
               <li>
                 In the app: <strong>Settings</strong> → <strong>Home screen widget</strong> — choose automatic or fixed workplace for punches, and whether to show estimated monthly pay on the widget.
               </li>

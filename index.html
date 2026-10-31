@@ -180,6 +180,14 @@
                   "@type": "Answer",
                   "text": "はい。月次タブで一覧とカレンダーを切り替えられます。カレンダーでは始業から終業の時間帯、日本語表示のときの祝日名、給与合計を確認できます。時間帯と稼働時間は切り替えられます。"
                 }
+              },
+              {
+                "@type": "Question",
+                "name": "ホーム画面でシフトを見られますか？",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "はい。Ver. 3.5.0 以降、ホーム画面に「シフトカレンダー」ウィジェットを追加できます。iPhone は中サイズが今週、大サイズが今月です。Android は今月のシフトです。日をタップすると、その日が開きます。"
+                }
               }
             ]
           }
@@ -318,49 +326,49 @@
         <div class="container">
           <h2 class="section-title">最新情報</h2>
           <p class="section-lead">
-            Ver. 3.4.0 の主なアップデートです。ストアの「最新情報」と同じ内容を掲載しています。
+            Ver. 3.5.0 の主なアップデートです。ホーム画面で今月のシフトを確認でき、月次・年次のまとめ方も選べます。
           </p>
           <div class="whats-new-grid">
             <article class="whats-new-card">
               <header class="whats-new-header">
-                <span class="whats-new-version">Ver. 3.4.0</span>
-                <span class="whats-new-date">2026年9月</span>
+                <span class="whats-new-version">Ver. 3.5.0</span>
+                <span class="whats-new-date">2026年10月</span>
               </header>
               <ul class="whats-new-list">
                 <li>
-                  <strong>カレンダーの時間帯</strong>
-                  — 各日に始業から終業（例: 09–16）を表示します。稼働時間への切り替えは、月次画面のメニューかアプリ基本設定からできます。
+                  <strong>シフトカレンダー</strong>
+                  — ホーム画面のウィジェットで、暦月のシフトを確認できます。iPhone は中サイズが今週、大サイズが今月です。Android は今月です。日をタップすると、その日が開きます。
                 </li>
                 <li>
-                  <strong>シフト予定（任意）</strong>
-                  — 「シフト予定を使う」はオフが初期状態です。オンにすると、未来の勤務を予定として登録できます。オフのときは今までどおり実績として登録します。
+                  <strong>時間帯と祝日</strong>
+                  — 各日に始業から終業を出します。余裕がある日は稼働時間も出します。日本語では国民の祝日名を表示し、英語では出しません。
                 </li>
                 <li>
-                  <strong>予定と実績の見分け</strong>
-                  — 予定だけの日は、カレンダーでは破線、一覧では「予」です。給与合計は実績だけを数えます。
+                  <strong>給与の表示</strong>
+                  — 右上の給与目安は、打刻ウィジェットと同じく表示／非表示を選べます。非表示のときは *** です。
                 </li>
                 <li>
-                  <strong>一括登録</strong>
-                  — 予定だけの日があるときは確認のうえ、勤務先の時刻で実績に置き換えられます。実績がある日と有給の日は上書きしません。
+                  <strong>集計対象</strong>
+                  — 月次と年次を「勤務先ごと」または「締日ごと」でまとめられます。勤務先ごとでは、その勤務先の締日で期間を区切ります。勤務先が1件のときは切替は出ません。
                 </li>
               </ul>
               <p class="whats-new-more">
                 操作の詳細は
-                <a href="help.html#month">使い方ガイド（月次）</a>
+                <a href="help.html#widget">使い方ガイド（ウィジェット）</a>
                 をご覧ください。
               </p>
             </article>
             <figure class="whats-new-shot">
               <div class="phone-frame">
                 <img
-                  src="assets/screenshots/ja/month-calendar.png"
+                  src="assets/screenshots/ja/shift-calendar.png"
                   width="230"
                   height="500"
-                  alt="2026年9月の月次カレンダー。時間帯と給与合計10万2100円"
+                  alt="ホーム画面のシフトカレンダー。2026年10月の時間帯と稼働時間。給与は非表示で右上は***。12日はスポーツの日"
                   loading="lazy"
                 />
               </div>
-              <figcaption>月次カレンダー（一覧と切り替え可）</figcaption>
+              <figcaption>ホーム画面のシフトカレンダー（給与は非表示の例）</figcaption>
             </figure>
           </div>
         </div>
@@ -388,13 +396,13 @@
             <article class="feature">
               <h3>月次一覧・カレンダー</h3>
               <p>
-                一覧とカレンダーを切り替え。日ごとの時間帯や稼働、残業・深夜、祝日名、給与の目安まで確認できます。シフト予定は必要なときだけオンにできます。
+                一覧とカレンダーを切り替え。日ごとの時間帯や稼働、残業・深夜、祝日名、給与の目安まで確認できます。まとめ方は勤務先ごと／締日ごとから選べます。
               </p>
             </article>
             <article class="feature">
               <h3>ホーム画面ウィジェット</h3>
               <p>
-                端末のホーム画面から打刻。ウィジェット上の月次給与は、表示／非表示を選べます。
+                打刻用ウィジェットに加えて、シフトカレンダーで今月の勤務を確認できます。月次給与は、表示／非表示を選べます。
               </p>
             </article>
             <article class="feature">
@@ -461,6 +469,12 @@
               <summary>月次はカレンダーでも見られますか？</summary>
               <p>
                 はい。月次タブで<strong>一覧</strong>と<strong>カレンダー</strong>を切り替えられます。カレンダーでは始業から終業の時間帯、日本語表示のときの祝日名、給与合計を確認できます。時間帯と稼働時間は切り替えられます。
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>ホーム画面でシフトを見られますか？</summary>
+              <p>
+                はい。Ver. 3.5.0 以降、ホーム画面にウィジェット<strong>「シフトカレンダー」</strong>を追加できます。iPhone は中サイズが今週、大サイズが今月です。Android は今月です。日をタップすると、その日が開きます。
               </p>
             </details>
           </div>
@@ -533,7 +547,7 @@
                 />
               </figure>
               <div class="story-copy">
-                <p class="story-kicker">03 · カレンダー <span class="story-new">NEW</span></p>
+                <p class="story-kicker">03 · カレンダー</p>
                 <h3>カレンダーで今月をひと目で</h3>
                 <p>
                   一覧と同じ集計を、カレンダーでも確認できます。右上のアイコンや設定から切り替えられます。
@@ -622,23 +636,23 @@
             <article class="story">
               <figure class="phone-frame">
                 <img
-                  src="assets/screenshots/ja/widget-settings.png"
-                  alt="ホームとウィジェット設定。打刻先の勤務先と月次給与の表示切替"
+                  src="assets/screenshots/ja/shift-calendar.png"
+                  alt="ホーム画面のシフトカレンダー。2026年10月の時間帯と稼働時間。給与は非表示"
                   loading="lazy"
                   width="390"
-                  height="847"
+                  height="848"
                 />
               </figure>
               <div class="story-copy">
-                <p class="story-kicker">07 · ウィジェット</p>
-                <h3>ホーム画面から打刻。給与は隠せる</h3>
+                <p class="story-kicker">07 · ウィジェット <span class="story-new">NEW</span></p>
+                <h3>今月のシフトを、アプリを開かずに</h3>
                 <p>
-                  ウィジェットの打刻先を自動または固定で選べます。月次給与は、他人に見られたくないとき非表示にできます。
+                  ウィジェット「シフトカレンダー」で、暦月の勤務を確認できます。日をタップすると、その日の編集が開きます。
                 </p>
                 <ul>
-                  <li>打刻先を「自動で選ぶ」か、特定の勤務先に固定</li>
-                  <li>ウィジェットの月次給与は *** でマスク可能</li>
-                  <li>見た目や手順は、端末・OS により異なります</li>
+                  <li>iPhone は中サイズが今週、大サイズが今月。Android は今月</li>
+                  <li>日本語では祝日名、余裕がある日は稼働時間も表示</li>
+                  <li>給与目安は *** で隠せます。打刻用ウィジェットも引き続き使えます</li>
                 </ul>
               </div>
             </article>

@@ -182,10 +182,18 @@
               },
               {
                 "@type": "Question",
-                "name": "Can I see shifts on the Home Screen?",
+                "name": "Can I change how monthly totals are grouped?",
                 "acceptedAnswer": {
                   "@type": "Answer",
-                  "text": "Yes. From Ver. 3.5.0 you can add the シフトカレンダー widget. On iPhone, medium shows this week and large shows this month. On Android it shows this month. Tap a day to open it."
+                  "text": "Yes. From Ver. 3.5.0, Totals grouped by in App basic settings switches between cutoff day and workplace. Cutoff day combines workplaces that share a cutoff. Workplace totals only the workplace you pick, using that workplace’s cutoff period. The switch is hidden when you have one workplace. Year uses the same grouping."
+                }
+              },
+              {
+                "@type": "Question",
+                "name": "Can I open the shift calendar from a widget?",
+                "acceptedAnswer": {
+                  "@type": "Answer",
+                  "text": "Yes. From Ver. 3.5.0, add the Home Screen widget named シフトカレンダー to see shifts without opening the app. On iPhone, medium shows this week and large shows this month. Android shows this month. Tap a day to open it."
                 }
               }
             ]
@@ -324,7 +332,7 @@
         <div class="container">
           <h2 class="section-title">What's new</h2>
           <p class="section-lead">
-            Highlights from Ver. 3.5.0. Check this month’s shifts on the Home Screen, and choose how monthly and yearly totals are grouped.
+            Ver. 3.5.0: you can change how monthly totals are grouped, and open the shift calendar from a Home Screen widget.
           </p>
           <div class="whats-new-grid">
             <article class="whats-new-card">
@@ -332,28 +340,45 @@
                 <span class="whats-new-version">Ver. 3.5.0</span>
                 <span class="whats-new-date">October 2026</span>
               </header>
-              <ul class="whats-new-list">
-                <li>
-                  <strong>Shift calendar</strong>
-                  — A home screen widget shows the calendar month. On iPhone, medium is this week and large is this month. On Android, it shows this month. Tap a day to open it.
-                </li>
-                <li>
-                  <strong>Time ranges and holidays</strong>
-                  — Each day shows a start-to-end range, and hours worked when the cell has room. Japanese public holiday names appear only when the app language is Japanese.
-                </li>
-                <li>
-                  <strong>Pay on the widget</strong>
-                  — Estimated pay in the corner uses the same show/hide setting as the punch widget. Hidden pay appears as ***.
-                </li>
-                <li>
-                  <strong>Totals grouped by</strong>
-                  — Group Month and Year by workplace or by cutoff day. By workplace uses that workplace’s cutoff period. The switch is hidden when you have only one workplace.
-                </li>
-              </ul>
+              <div class="whats-new-point">
+                <h3>Choose monthly totals by cutoff day or workplace</h3>
+                <p>
+                  You can change how the month is totaled.
+                </p>
+                <ul class="whats-new-list">
+                  <li>
+                    <strong>Cutoff day</strong>
+                    — Combine every workplace that shares the same cutoff.
+                  </li>
+                  <li>
+                    <strong>Workplace</strong>
+                    — Total only the workplace you pick, using that workplace’s cutoff period.
+                  </li>
+                </ul>
+                <p>
+                  Change it in Settings → App basic settings → Totals grouped by. The switch is hidden when you have one workplace. Year uses the same grouping.
+                </p>
+              </div>
+              <div class="whats-new-point">
+                <h3>See the shift calendar from a widget</h3>
+                <p>
+                  Add the Home Screen widget named シフトカレンダー to check shifts without opening the app.
+                </p>
+                <ul class="whats-new-list">
+                  <li>On iPhone, medium shows this week and large shows this month.</li>
+                  <li>On Android, the widget shows this month.</li>
+                  <li>Tap a day to open that day.</li>
+                </ul>
+                <p>
+                  Long-press the Home Screen and choose シフトカレンダー from the widget gallery.
+                </p>
+              </div>
               <p class="whats-new-more">
                 See the
-                <a href="help-en.html#widget">user guide (widget)</a>
-                for how to add it.
+                <a href="help-en.html#month">user guide (Month)</a>
+                and
+                <a href="help-en.html#widget">widget</a>
+                for the steps.
               </p>
             </article>
             <figure class="whats-new-shot">
@@ -470,9 +495,15 @@
               </p>
             </details>
             <details class="faq-item">
-              <summary>Can I see shifts on the Home Screen?</summary>
+              <summary>Can I change how monthly totals are grouped?</summary>
               <p>
-                Yes. From Ver. 3.5.0 you can add the widget named <strong>シフトカレンダー</strong>. On iPhone, medium shows this week and large shows this month. On Android it shows this month. Tap a day to open it.
+                Yes. From Ver. 3.5.0, <strong>Settings</strong> → <strong>App basic settings</strong> → <strong>Totals grouped by</strong> switches between <strong>cutoff day</strong> and <strong>workplace</strong>. Cutoff day combines workplaces that share a cutoff. Workplace totals only the workplace you pick, using that workplace’s cutoff period. The switch is hidden when you have one workplace. Year uses the same grouping.
+              </p>
+            </details>
+            <details class="faq-item">
+              <summary>Can I open the shift calendar from a widget?</summary>
+              <p>
+                Yes. From Ver. 3.5.0, add the Home Screen widget named <strong>シフトカレンダー</strong> to see shifts without opening the app. On iPhone, medium shows this week and large shows this month. Android shows this month. Tap a day to open it.
               </p>
             </details>
           </div>

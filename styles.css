@@ -560,8 +560,29 @@ section {
   font-size: 0.9rem;
 }
 
-.whats-new-list {
+.whats-new-point + .whats-new-point {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid var(--border);
+}
+
+.whats-new-point h3 {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.whats-new-point p {
   margin: 0;
+  color: var(--muted);
+}
+
+.whats-new-point .whats-new-list + p {
+  margin-top: 0.75rem;
+}
+
+.whats-new-list {
+  margin: 0.55rem 0 0;
   padding-left: 1.2rem;
   color: var(--muted);
 }

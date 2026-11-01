@@ -38,6 +38,42 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://stallions0721.github.io/timecard-app-site/help.html" />
   </url>
   <url>
+    <loc>https://stallions0721.github.io/timecard-app-site/widget-shift.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stallions0721.github.io/timecard-app-site/widget-shift.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://stallions0721.github.io/timecard-app-site/widget-shift-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stallions0721.github.io/timecard-app-site/widget-shift.html" />
+  </url>
+  <url>
+    <loc>https://stallions0721.github.io/timecard-app-site/widget-shift-en.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stallions0721.github.io/timecard-app-site/widget-shift.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://stallions0721.github.io/timecard-app-site/widget-shift-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stallions0721.github.io/timecard-app-site/widget-shift.html" />
+  </url>
+  <url>
+    <loc>https://stallions0721.github.io/timecard-app-site/monthly-totals.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://stallions0721.github.io/timecard-app-site/monthly-totals-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html" />
+  </url>
+  <url>
+    <loc>https://stallions0721.github.io/timecard-app-site/monthly-totals-en.html</loc>
+    <lastmod>2026-11-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ja" href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://stallions0721.github.io/timecard-app-site/monthly-totals-en.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html" />
+  </url>
+  <url>
     <loc>https://stallions0721.github.io/timecard-app-site/privacy-en.html</loc>
     <lastmod>2026-11-01</lastmod>
     <changefreq>yearly</changefreq>

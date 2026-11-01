@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ホーム画面のウィジェットで打刻とシフトを見る｜タイムカード</title>
+    <meta
+      name="description"
+      content="タイムカードのホーム画面ウィジェットで、出勤・退勤と今月のシフトを見る手順。iPhone は中サイズが今週、大サイズが今月。Android は今月です。ウィジェット名はシフトカレンダー。"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Time Card" />
+    <link
+      rel="canonical"
+      href="https://stallions0721.github.io/timecard-app-site/widget-shift.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://stallions0721.github.io/timecard-app-site/widget-shift.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://stallions0721.github.io/timecard-app-site/widget-shift-en.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://stallions0721.github.io/timecard-app-site/widget-shift.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="タイムカード" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:title"
+      content="ホーム画面のウィジェットで打刻とシフトを見る｜タイムカード"
+    />
+    <meta
+      property="og:description"
+      content="打刻ウィジェットとシフトカレンダーの追加手順。iPhone と Android のサイズの違い、日をタップしたときの動き。"
+    />
+    <meta
+      property="og:url"
+      content="https://stallions0721.github.io/timecard-app-site/widget-shift.html"
+    />
+    <meta
+      property="og:image"
+      content="https://stallions0721.github.io/timecard-app-site/assets/og-image-ja.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "タイムカード",
+            "item": "https://stallions0721.github.io/timecard-app-site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "使い方ガイド",
+            "item": "https://stallions0721.github.io/timecard-app-site/help.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "ホーム画面のウィジェットで打刻とシフトを見る",
+            "item": "https://stallions0721.github.io/timecard-app-site/widget-shift.html"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/app-icon.png" width="40" height="40" alt="" />
+          <span>タイムカード</span>
+        </a>
+        <nav class="nav" aria-label="サイト内リンク">
+          <a href="index.html">トップ</a>
+          <a href="help.html">使い方</a>
+          <a href="widget-shift-en.html" hreflang="en">English</a>
+          <a href="index.html#download">ダウンロード</a>
+          <a href="privacy.html">プライバシー</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="guide-page">
+      <div class="container">
+        <header class="guide-header">
+          <p class="eyebrow">使い方 · Ver. 3.5.0</p>
+          <h1>ホーム画面のウィジェットで打刻とシフトを見る</h1>
+          <p class="lead">
+            タイムカードは、アプリを開かなくてもホーム画面から出退勤でき、今月のシフトも同じ場所で確認できます。使うウィジェットは2種類です。
+          </p>
+          <p class="lang-switch">
+            <a href="widget-shift-en.html" hreflang="en">English</a>
+            ·
+            <a href="help.html#widget">使い方ガイドのウィジェット欄</a>
+          </p>
+        </header>
+
+        <article class="guide-body">
+          <section class="guide-section">
+            <h2>2種類のウィジェット</h2>
+            <ul>
+              <li>
+                <strong>打刻ウィジェット</strong> — ホーム画面のボタンから出勤・退勤します。
+              </li>
+              <li>
+                <strong>シフトカレンダー</strong> — ウィジェット一覧での名前は「シフトカレンダー」です。英語表示のときも、この名前のままです。今月のシフトを見て、日をタップするとその日が開きます。
+              </li>
+            </ul>
+          </section>
+
+          <section class="guide-section">
+            <h2>シフトカレンダーを追加する</h2>
+            <ol class="guide-steps">
+              <li>ホーム画面を長押しします。</li>
+              <li>ウィジェット一覧から「シフトカレンダー」を選び、ホーム画面に置きます。</li>
+              <li>日をタップすると、その日の編集画面が開きます。</li>
+            </ol>
+            <h3>iPhone と Android の違い</h3>
+            <ul>
+              <li>iPhone の中サイズは今週です。その週の出勤日数と合計時間も出ます。</li>
+              <li>iPhone の大サイズは今月です。</li>
+              <li>Android は今月のカレンダーです。</li>
+            </ul>
+            <p>
+              マスは暦月です。各日に始業から終業の時間帯を出します。セルに余裕がある日は、稼働時間も出します。アプリの言語が日本語のときは国民の祝日名を表示し、英語のときは出しません。
+            </p>
+            <p>
+              予定だけの日は破線で区別します。右上の給与目安は、打刻ウィジェットと同じく表示と非表示を選べます。非表示のときは *** です。給与には実績だけを数えます。
+            </p>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/shift-calendar.png"
+                  alt="ホーム画面のシフトカレンダー。2026年10月の時間帯と稼働時間。給与は非表示で右上は***"
+                  width="240"
+                  height="522"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>大サイズは今月のシフトです。給与を隠すと右上は *** になります。</figcaption>
+            </figure>
+          </section>
+
+          <section class="guide-section">
+            <h2>打刻ウィジェットを追加する</h2>
+            <ol class="guide-steps">
+              <li>ホーム画面を長押しし、タイムカードの打刻用ウィジェットを追加します。手順は iPhone と Android で異なります。</li>
+              <li>
+                アプリ内の<strong>設定</strong> → <strong>ホーム画面ウィジェット</strong>で、打刻に使う勤務先（自動／固定）を選びます。ウィジェットに月次給与の目安を出すかも、ここで切り替えます。
+              </li>
+              <li>ウィジェットのボタンから出勤・退勤します。</li>
+            </ol>
+            <p class="guide-note">
+              見た目とサイズは OS の仕様に従います。動かないときは、アプリのホーム画面から打刻してください。
+            </p>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/widget-settings.png"
+                  alt="ウィジェット設定。打刻先の勤務先と、月次給与の表示切替"
+                  width="240"
+                  height="521"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>打刻先の勤務先と、ウィジェット上の月次給与の表示／非表示を選べます。</figcaption>
+            </figure>
+          </section>
+
+          <section class="guide-section">
+            <h2>関連する操作</h2>
+            <ul>
+              <li>
+                <a href="monthly-totals.html">月次の集計を、締め日と勤務先で切り替える</a>
+              </li>
+              <li><a href="help.html">使い方ガイドの全体</a></li>
+              <li><a href="index.html#download">タイムカードをダウンロード</a></li>
+            </ul>
+          </section>
+        </article>
+
+        <p class="guide-back">
+          <a class="btn btn-secondary" href="help.html">使い方ガイドへ戻る</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container inner">
+        <span>© Time Card（タイムカード）</span>
+        <span>
+          <a href="help.html">使い方</a>
+          ·
+          <a href="widget-shift-en.html" hreflang="en">English</a>
+          ·
+          <a href="privacy.html">プライバシーポリシー</a>
+          ·
+          <a href="mailto:stallions.0721@gmail.com">お問い合わせ</a>
+        </span>
+        <p class="site-analytics-note">
+          このサイトの閲覧状況は、サイト改善のため Google アナリティクスで計測しています。
+        </p>
+      </div>
+    </footer>
+    <script src="ga.js"></script>
+  </body>
+</html>

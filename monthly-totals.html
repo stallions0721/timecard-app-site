@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>月次の集計を締め日と勤務先で切り替える｜タイムカード</title>
+    <meta
+      name="description"
+      content="タイムカードの月次集計を、締日ごとと勤務先ごとで切り替える方法です。設定はアプリの基本設定の集計対象。勤務先が1件のときは切り替えは出ません。年次も同じ単位です。"
+    />
+    <meta name="robots" content="index, follow, max-image-preview:large" />
+    <meta name="author" content="Time Card" />
+    <link
+      rel="canonical"
+      href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="ja"
+      href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="https://stallions0721.github.io/timecard-app-site/monthly-totals-en.html"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="https://stallions0721.github.io/timecard-app-site/monthly-totals.html"
+    />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="タイムカード" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta
+      property="og:title"
+      content="月次の集計を締め日と勤務先で切り替える｜タイムカード"
+    />
+    <meta
+      property="og:description"
+      content="締日ごとは同じ締め日の勤務先をまとめ、勤務先ごとは選んだ勤務先の締め日で区切ります。"
+    />
+    <meta
+      property="og:url"
+      content="https://stallions0721.github.io/timecard-app-site/monthly-totals.html"
+    />
+    <meta
+      property="og:image"
+      content="https://stallions0721.github.io/timecard-app-site/assets/og-image-ja.png"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#2563eb" />
+    <link rel="icon" type="image/png" href="assets/app-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "タイムカード",
+            "item": "https://stallions0721.github.io/timecard-app-site/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "使い方ガイド",
+            "item": "https://stallions0721.github.io/timecard-app-site/help.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "月次の集計を締め日と勤務先で切り替える",
+            "item": "https://stallions0721.github.io/timecard-app-site/monthly-totals.html"
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container inner">
+        <a class="brand" href="index.html">
+          <img src="assets/app-icon.png" width="40" height="40" alt="" />
+          <span>タイムカード</span>
+        </a>
+        <nav class="nav" aria-label="サイト内リンク">
+          <a href="index.html">トップ</a>
+          <a href="help.html">使い方</a>
+          <a href="monthly-totals-en.html" hreflang="en">English</a>
+          <a href="index.html#download">ダウンロード</a>
+          <a href="privacy.html">プライバシー</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="guide-page">
+      <div class="container">
+        <header class="guide-header">
+          <p class="eyebrow">使い方 · Ver. 3.5.0</p>
+          <h1>月次の集計を、締め日と勤務先で切り替える</h1>
+          <p class="lead">
+            タイムカードの月次は、まとめ方をあとから変更できます。単位は「締日」と「勤務先」の2つです。年次の集計も、同じ単位になります。
+          </p>
+          <p class="lang-switch">
+            <a href="monthly-totals-en.html" hreflang="en">English</a>
+            ·
+            <a href="help.html#month">使い方ガイドの月次欄</a>
+          </p>
+        </header>
+
+        <article class="guide-body">
+          <section class="guide-section">
+            <h2>切り替え方</h2>
+            <ol class="guide-steps">
+              <li><strong>設定</strong>を開きます。</li>
+              <li><strong>アプリの基本設定</strong>を開きます。</li>
+              <li>「集計対象」で、<strong>締日ごと</strong>か<strong>勤務先ごと</strong>を選びます。</li>
+            </ol>
+            <p>
+              月次画面と年次画面の上部でも、集計対象を切り替えられます。勤務先が1件のときは、切り替えは出ません。
+            </p>
+            <p class="guide-note">
+              新しくインストールした場合の初期値は勤務先ごとです。アップデート前から使っている場合は、これまでどおり締日ごとのままです。
+            </p>
+          </section>
+
+          <section class="guide-section">
+            <h2>締日ごと</h2>
+            <p>
+              同じ締め日の勤務先を、ひとつにまとめて集計します。締め日が違う勤務先は、別のまとまりになります。
+            </p>
+            <p>
+              締め日は、勤務先の登録で設定します。<strong>設定</strong> → <strong>勤務先</strong>で、各勤務先の締め日を確認できます。
+            </p>
+          </section>
+
+          <section class="guide-section">
+            <h2>勤務先ごと</h2>
+            <p>
+              選んだ勤務先だけを集計します。期間は、その勤務先の締め日で区切ります。掛け持ちで、先ごとに今月の稼働と給与の目安を見たいときに使います。
+            </p>
+          </section>
+
+          <section class="guide-section">
+            <h2>一覧とカレンダーは、集計単位とは別です</h2>
+            <p>
+              月次の見た目は、一覧とカレンダーを切り替えられます。これは集計単位とは別の設定です。
+            </p>
+            <ul>
+              <li>
+                <strong>設定</strong> → <strong>アプリの基本設定</strong> → 「月次の表示」で、一覧 / カレンダーを選びます。月次画面右上のメニューからも切り替えられます。
+              </li>
+              <li>
+                カレンダーでは、各日に始業から終業の時間帯を出します。稼働時間への切り替えは「カレンダーの時間表示」です。
+              </li>
+              <li>日本語では国民の祝日名を表示します。給与合計は目安です。</li>
+            </ul>
+            <figure class="guide-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/month-calendar.png"
+                  alt="月次カレンダー。日付ごとの時間帯と給与合計"
+                  width="240"
+                  height="521"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>カレンダーは見た目の切り替えです。集計の単位は締日ごと／勤務先ごとです。</figcaption>
+            </figure>
+          </section>
+
+          <section class="guide-section">
+            <h2>関連する操作</h2>
+            <ul>
+              <li>
+                <a href="widget-shift.html">ホーム画面のウィジェットで打刻とシフトを見る</a>
+              </li>
+              <li><a href="help.html#workplace">勤務先の登録（締め日・時給）</a></li>
+              <li><a href="index.html#download">タイムカードをダウンロード</a></li>
+            </ul>
+          </section>
+        </article>
+
+        <p class="guide-back">
+          <a class="btn btn-secondary" href="help.html">使い方ガイドへ戻る</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container inner">
+        <span>© Time Card（タイムカード）</span>
+        <span>
+          <a href="help.html">使い方</a>
+          ·
+          <a href="monthly-totals-en.html" hreflang="en">English</a>
+          ·
+          <a href="privacy.html">プライバシーポリシー</a>
+          ·
+          <a href="mailto:stallions.0721@gmail.com">お問い合わせ</a>
+        </span>
+        <p class="site-analytics-note">
+          このサイトの閲覧状況は、サイト改善のため Google アナリティクスで計測しています。
+        </p>
+      </div>
+    </footer>
+    <script src="ga.js"></script>
+  </body>
+</html>

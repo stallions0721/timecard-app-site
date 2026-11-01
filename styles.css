@@ -630,6 +630,12 @@ section {
   justify-content: space-between;
 }
 
+.site-analytics-note {
+  flex-basis: 100%;
+  margin: 0;
+  font-size: 0.8rem;
+}
+
 /* 使い方ガイド */
 .guide-page {
   padding: 2rem 0 4rem;

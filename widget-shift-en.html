@@ -99,10 +99,10 @@
     <main class="guide-page">
       <div class="container">
         <header class="guide-header">
-          <p class="eyebrow">Guide · Ver. 3.5.0</p>
+          <p class="eyebrow">Guide · Ver. 3.5.1</p>
           <h1>See punches and shifts from a Home Screen widget</h1>
           <p class="lead">
-            Time Card can clock you in and out from the Home Screen, and show this month’s shifts there too. There are two widgets.
+            Time Card can clock you in and out from the Home Screen, and show this month’s shifts there too. There are two widgets. Ver. 3.5.1 improves layout alignment and Android settings.
           </p>
           <p class="lang-switch">
             <a href="widget-shift.html" hreflang="ja">日本語</a>
@@ -132,11 +132,11 @@
             <h3>iPhone and Android</h3>
             <ul>
               <li>On iPhone, medium shows this week, including how many days you worked and the total hours.</li>
-              <li>On iPhone, large shows this month.</li>
-              <li>On Android, the widget shows this month.</li>
+              <li>On iPhone, large shows this month. Only medium and large are available; free vertical resizing is not supported.</li>
+              <li>On Android, the widget shows this month (default about <strong>4×4</strong>) with larger type. Resizing shorter hides aux hours first; <strong>holiday names and memos stay visible</strong>.</li>
             </ul>
             <p>
-              The grid is the calendar month. Each day shows a start-to-end time range, and hours worked when the cell has room. Japanese public holiday names appear only when the app language is Japanese.
+              The grid is the calendar month. Each day shows a start-to-end time range, and hours worked when the cell has room. Day cells keep holiday and memo slots aligned like the in-app calendar. Memos support line breaks (up to 3 lines with one shift, 1 line with two or more). App calendar time display (range / hours) is reflected on the widget. Japanese public holiday names appear only when the app language is Japanese.
             </p>
             <p>
               Planned-only days stay dashed. Estimated pay in the corner uses the same show/hide setting as the punch widget. Hidden pay appears as ***. Pay counts actual times only.
@@ -160,9 +160,12 @@
             <ol class="guide-steps">
               <li>Long-press the Home Screen and add the Time Card punch widget. The steps differ on iPhone and Android.</li>
               <li>
-                In the app, open <strong>Settings</strong> → <strong>Home screen widget</strong>. Choose an automatic or fixed workplace, and whether estimated monthly pay is shown.
+                In the app, open <strong>Settings</strong> → <strong>Home &amp; widget</strong>. Choose an automatic or fixed workplace, and whether estimated monthly pay is shown.
               </li>
-              <li>Use the widget buttons to clock in or out.</li>
+              <li>
+                On Android, set <strong>widget background opacity</strong> on the same screen (10%–100%; applies to the frame and shift calendar cell fills). This option is not shown on iPhone because of WidgetKit limits.
+              </li>
+              <li>Use the widget buttons to clock in or out. On Android, 1×1 and 2×1 layouts are tuned so times are less likely to clip.</li>
             </ol>
             <p class="guide-note">
               Size and layout follow the operating system. If the widget does not respond, clock in from the Home tab in the app.

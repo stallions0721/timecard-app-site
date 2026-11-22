@@ -601,6 +601,34 @@ section {
   color: var(--muted);
 }
 
+.whats-new-history {
+  margin-top: 2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.whats-new-history-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.whats-new-card--past {
+  box-shadow: none;
+  background: color-mix(in srgb, var(--surface) 88%, var(--border));
+}
+
+.whats-new-card--past .whats-new-version {
+  background: rgba(37, 99, 235, 0.06);
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.whats-new-card--past .whats-new-point h3 {
+  font-size: 1rem;
+}
+
 .download {
   text-align: center;
   padding-bottom: 4rem;

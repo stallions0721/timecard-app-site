@@ -334,19 +334,55 @@
         <div class="container">
           <h2 class="section-title">最新情報</h2>
           <p class="section-lead">
-            Ver. 3.5.1 のお知らせです。シフトカレンダーとウィジェットの表示を整え、祝日・備考・時間表示をアプリに近づけました。
+            Ver. 3.5.2 のお知らせです。ウィジェットの日付跨ぎと、退勤前の出勤時刻の修正まわりを直しました。
           </p>
           <div class="whats-new-grid">
             <article class="whats-new-card">
+              <header class="whats-new-header">
+                <span class="whats-new-version">Ver. 3.5.2</span>
+                <span class="whats-new-date">2026年11月</span>
+              </header>
+              <div class="whats-new-point">
+                <h3>ウィジェットから翌日も出勤できるようにしました</h3>
+                <p>
+                  退勤したあと日付が変わっても、アプリを開かずにウィジェットから出勤できます。
+                </p>
+              </div>
+              <div class="whats-new-point">
+                <h3>退勤前に出勤時刻を直しても消えないようにしました</h3>
+                <p>
+                  出勤だけ記録した状態で時刻を修正・保存しても、出勤時間が消えないよう修正しました。
+                </p>
+              </div>
+              <p class="whats-new-more">
+                ウィジェットの使い方は
+                <a href="widget-shift.html">ホーム画面のウィジェットで打刻とシフトを見る</a>
+                をご覧ください。
+              </p>
+            </article>
+            <figure class="whats-new-shot">
+              <div class="phone-frame">
+                <img
+                  src="assets/screenshots/ja/home.png"
+                  width="230"
+                  height="500"
+                  alt="タイムカードのホーム画面。出勤・退勤ボタンと本日の時刻表示"
+                  loading="lazy"
+                />
+              </div>
+              <figcaption>ホーム画面の打刻（ウィジェットからも同じ操作ができます）</figcaption>
+            </figure>
+          </div>
+
+          <div class="whats-new-history">
+            <h3 class="whats-new-history-title">これまでの更新</h3>
+            <article class="whats-new-card whats-new-card--past">
               <header class="whats-new-header">
                 <span class="whats-new-version">Ver. 3.5.1</span>
                 <span class="whats-new-date">2026年11月</span>
               </header>
               <div class="whats-new-point">
                 <h3>シフトカレンダーの表示をアプリに近づけました</h3>
-                <p>
-                  日セルの祝日・備考の位置を揃え、読みやすくしました。
-                </p>
                 <ul class="whats-new-list">
                   <li>備考は改行入力できます（1勤務は最大3行、2勤務以上は1行）。</li>
                   <li>アプリの時間表示（時間帯／稼働時間）がウィジェットにも反映されます。</li>
@@ -360,30 +396,30 @@
                   <li>「ホームとウィジェット」で背景の<strong>不透明度</strong>を変えられます。</li>
                   <li>1×1・2×1 の打刻ウィジェットで時刻が見切れにくいようにしました。</li>
                 </ul>
-                <p>
-                  iPhone の中サイズは今週、大サイズは今月です。背景の不透明度設定は Android のみです。
-                </p>
+              </div>
+            </article>
+            <article class="whats-new-card whats-new-card--past">
+              <header class="whats-new-header">
+                <span class="whats-new-version">Ver. 3.5.0</span>
+                <span class="whats-new-date">2026年11月</span>
+              </header>
+              <div class="whats-new-point">
+                <h3>ホーム画面にシフトカレンダーを追加できるようにしました</h3>
+                <ul class="whats-new-list">
+                  <li>iPhone は中サイズが今週、大サイズが今月です。</li>
+                  <li>日をタップすると、その日が開きます。</li>
+                  <li>月次と年次は、勤務先ごとまたは締日ごとでまとめられます。</li>
+                  <li>ウィジェットの給与目安は、表示と非表示を切り替えられます。</li>
+                </ul>
               </div>
               <p class="whats-new-more">
-                操作の詳細は
+                詳細は
                 <a href="widget-shift.html">ホーム画面のウィジェットで打刻とシフトを見る</a>
-                をご覧ください。集計単位の切り替えは Ver. 3.5.0 からの機能で、
+                と
                 <a href="monthly-totals.html">月次の集計を締め日と勤務先で切り替える</a>
-                にまとめています。
+                をご覧ください。
               </p>
             </article>
-            <figure class="whats-new-shot">
-              <div class="phone-frame">
-                <img
-                  src="assets/screenshots/ja/shift-calendar.png"
-                  width="230"
-                  height="500"
-                  alt="ホーム画面のシフトカレンダー。2026年10月の時間帯と稼働時間。給与は非表示で右上は***。12日はスポーツの日"
-                  loading="lazy"
-                />
-              </div>
-              <figcaption>ホーム画面のシフトカレンダー（給与は非表示の例）</figcaption>
-            </figure>
           </div>
         </div>
       </section>

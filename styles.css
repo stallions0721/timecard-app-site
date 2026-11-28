@@ -604,7 +604,15 @@ section {
 .whats-new-history {
   margin-top: 2rem;
   display: grid;
-  gap: 1rem;
+  gap: 0.85rem;
+}
+
+.whats-new-history-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.35rem 1rem;
 }
 
 .whats-new-history-title {
@@ -612,6 +620,68 @@ section {
   font-size: 1.05rem;
   font-weight: 700;
   color: var(--text);
+}
+
+.whats-new-history-all {
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.whats-new-history-all:hover {
+  text-decoration: underline;
+}
+
+.changelog-teasers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.changelog-teasers a {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.35rem 1rem;
+  align-items: baseline;
+  padding: 0.7rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--surface) 88%, var(--border));
+  color: inherit;
+  text-decoration: none;
+}
+
+.changelog-teasers a:hover {
+  border-color: rgba(37, 99, 235, 0.35);
+  color: inherit;
+}
+
+.changelog-teaser-version {
+  font-weight: 700;
+  color: var(--primary-dark);
+  white-space: nowrap;
+}
+
+.changelog-teaser-text {
+  color: var(--text);
+}
+
+.changelog-teasers time {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+.changelog-list {
+  display: grid;
+  gap: 1rem;
+  max-width: 46rem;
+}
+
+.changelog-list .whats-new-card {
+  scroll-margin-top: 5.5rem;
 }
 
 .whats-new-card--past {
@@ -854,6 +924,22 @@ section {
   .guide-toc ol {
     columns: 2;
     column-gap: 2rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .whats-new-history-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .changelog-teasers a {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .changelog-teaser-text,
+  .changelog-teasers time {
+    min-width: 0;
   }
 }
 

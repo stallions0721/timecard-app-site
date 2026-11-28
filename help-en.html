@@ -146,6 +146,7 @@
         <nav class="nav" aria-label="Site navigation">
           <a href="index-en.html">Home</a>
           <a href="help-en.html" aria-current="page">Guide</a>
+          <a href="changelog-en.html">Changelog</a>
           <a href="help.html" hreflang="ja">日本語</a>
           <a href="index-en.html#download">Download</a>
           <a href="privacy-en.html">Privacy</a>
@@ -294,7 +295,7 @@
               <li>You may move to the previous or next month with arrows or swipe.</li>
               <li>Use <strong>+</strong> to add a record manually.</li>
               <li>
-                In calendar view, each day shows a <strong>start-to-end time range</strong>. Switch to hours worked from the overflow menu, or under <strong>App settings</strong> → Calendar time display.
+                In calendar view, each day shows a <strong>start-to-end time range</strong>. Switch to hours worked from the overflow menu, or under <strong>App settings</strong> → Calendar time display. On a six-week month, or when a cell is narrow, extra hours are hidden so the clock-in/out range stays visible (Ver. 3.6.0 and later).
               </li>
               <li>
                 <strong>Japanese public holiday names</strong> appear only when the app language is Japanese.
@@ -344,12 +345,14 @@
               <li>
                 Tap <strong>Start</strong> / <strong>End</strong> times to change them. Use the <strong>Next day</strong> toggle for shifts that end after midnight.
               </li>
-              <li>Set <strong>Regular break</strong> and <strong>Late-night break</strong>.</li>
+              <li>
+                <strong>Breaks</strong> can be several start–end ranges (Ver. 3.6.0 and later). Time between 10 PM and 5 AM is counted as a late-night break. Use <strong>Next day</strong> when a break crosses midnight. Duration-only entry still works. Workplaces and work patterns use the same break entry.
+              </li>
               <li>
                 <strong>Leave flag</strong> — Tap <strong>?</strong> next to the label for an explanation.
               </li>
               <li>
-                <strong>Notes</strong> (single line) and tags such as early leave may be available.
+                <strong>Notes</strong> can include line breaks. <strong>PTO</strong> stays fixed on the left. <strong>Early</strong> and <strong>Direct</strong> are included at first, and you can add others, such as half day or remote, with <strong>+</strong>. Long-press a label to rename or delete it. Long-press the handle and drag to reorder. Added shortcuts are note text only. Pay and paid-leave balance do not change. Tap <strong>?</strong> beside Notes for how they work.
               </li>
               <li>
                 Tap <strong>Save</strong> at the top to apply. If you change the date with unsaved edits, you will be asked to confirm.
@@ -366,7 +369,7 @@
             <ul>
               <li>Tap <strong>+</strong> to add a workplace.</li>
               <li>
-                For each workplace, set <strong>hourly wage</strong>, <strong>rounding</strong> (e.g. per minute), <strong>closing day</strong>, <strong>goal amount</strong>, default start/end times, break times, and more.
+                For each workplace, set <strong>hourly wage</strong>, <strong>rounding</strong> (e.g. per minute), <strong>closing day</strong>, <strong>goal amount</strong>, default start/end times, breaks (time ranges or duration), and more.
               </li>
               <li>Register separate workplaces if you work multiple jobs or sites.</li>
             </ul>
@@ -541,6 +544,8 @@
         <span>© Time Card</span>
         <span>
           <a href="help-en.html">Guide</a>
+          ·
+          <a href="changelog-en.html">Changelog</a>
           ·
           <a href="help.html">日本語</a>
           ·

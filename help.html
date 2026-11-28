@@ -146,6 +146,7 @@
         <nav class="nav" aria-label="サイト内リンク">
           <a href="index.html">トップ</a>
           <a href="help.html" aria-current="page">使い方</a>
+          <a href="changelog.html">更新履歴</a>
           <a href="index-en.html" hreflang="en">English</a>
           <a href="index.html#download">ダウンロード</a>
           <a href="privacy.html">プライバシー</a>
@@ -301,7 +302,7 @@
                 <strong>＋</strong>ボタンで、手動で勤怠を追加することもできます。
               </li>
               <li>
-                カレンダー表示では、各日に<strong>始業から終業の時間帯</strong>を出します。稼働時間への切り替えは、右上メニューか<strong>アプリの基本設定</strong>の「カレンダーの時間表示」です。
+                カレンダー表示では、各日に<strong>始業から終業の時間帯</strong>を出します。稼働時間への切り替えは、右上メニューか<strong>アプリの基本設定</strong>の「カレンダーの時間表示」です。6週になる月やセルが狭いときは、稼働時間の補助行を隠して出退勤の時間帯を優先します（Ver. 3.6.0 以降）。
               </li>
               <li>
                 日本語 UI では<strong>国民の祝日名</strong>が日付セルに表示されます。英語 UI では祝日名は出しません。
@@ -362,13 +363,13 @@
                 <strong>始業</strong>・<strong>終業</strong>の時刻をタップして変更します。<strong>翌日</strong>トグルで日付をまたぐ終業に対応します。
               </li>
               <li>
-                <strong>通常休憩</strong>・<strong>深夜休憩</strong>を設定します。
+                <strong>休憩</strong>は「開始〜終了」の時間帯で複数登録できます（Ver. 3.6.0 以降）。22:00〜05:00 にかかる分は深夜休憩として自動で分かれます。日付をまたぐ休憩は「翌日」で指定します。時間帯を使わないときは、これまでどおり所要時間だけでも入力できます。勤務先と就業パターンでも同じように登録できます。
               </li>
               <li>
                 <strong>休暇フラグ</strong> — ラベル横の <strong>?</strong> で説明を確認できます。
               </li>
               <li>
-                <strong>備考</strong>（改行可。カレンダーでは1勤務の日は最大3行、2勤務以上は1行）や、早退・直行・有給などのタグを利用できます。
+                <strong>備考</strong>は改行できます（カレンダーでは1勤務の日は最大3行、2勤務以上は1行）。有給は左端に固定です。初期状態では早退・直行もあり、半休や在宅などは <strong>＋</strong> で追加できます。文字の長押しで名前の変更・削除、左のつまみを長押ししたままドラッグで並べ替えです。追加したチップは備考の文言だけで、給与や有給の残日数は変わりません。使い方は備考ラベル横の <strong>?</strong> で確認できます。
               </li>
               <li>
                 画面上部の<strong>保存</strong>で確定します。編集後に日付を変えると、未保存の内容がある場合は確認が表示されます。
@@ -389,7 +390,7 @@
                 <strong>＋</strong>で新しい勤務先を追加します。
               </li>
               <li>
-                各勤務先で、<strong>時給</strong>・<strong>丸め単位</strong>（1分単位など）・<strong>締め日</strong>・<strong>目標額</strong>・標準の始業・終業時刻・休憩時間などを設定します。
+                各勤務先で、<strong>時給</strong>・<strong>丸め単位</strong>（1分単位など）・<strong>締め日</strong>・<strong>目標額</strong>・標準の始業・終業時刻・休憩（時間帯または所要時間）などを設定します。
               </li>
               <li>
                 複数のバイト先や現場を掛け持ちする場合は、勤務先ごとに分けて登録します。
@@ -569,6 +570,8 @@
         <span>© Time Card（タイムカード）</span>
         <span>
           <a href="help.html">使い方</a>
+          ·
+          <a href="changelog.html">更新履歴</a>
           ·
           <a href="help-en.html" hreflang="en">Guide (EN)</a>
           ·

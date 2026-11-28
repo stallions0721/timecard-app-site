@@ -214,6 +214,7 @@
           <a href="#whats-new">What's new</a>
           <a href="#features">Features</a>
           <a href="help-en.html">Guide</a>
+          <a href="changelog-en.html">Changelog</a>
           <a href="#faq">FAQ</a>
           <a href="#screenshots">Screens</a>
           <a href="#download">Download</a>
@@ -332,91 +333,84 @@
         <div class="container">
           <h2 class="section-title">What's new</h2>
           <p class="section-lead">
-            Ver. 3.5.2: clock-in from the widget after a date change, and a fix so editing clock-in time before clock-out no longer clears it.
+            Ver. 3.6.0: register several breaks as time ranges, add one-tap note shortcuts, and keep the monthly calendar readable on shorter screens.
           </p>
           <div class="whats-new-grid">
             <article class="whats-new-card">
               <header class="whats-new-header">
-                <span class="whats-new-version">Ver. 3.5.2</span>
+                <span class="whats-new-version">Ver. 3.6.0</span>
                 <span class="whats-new-date">November 2026</span>
               </header>
               <div class="whats-new-point">
-                <h3>Clock in from the widget after the date changes</h3>
-                <p>
-                  After you clock out, you can clock in again from the widget the next day without opening the app first.
-                </p>
+                <h3>Register several breaks as time ranges</h3>
+                <ul class="whats-new-list">
+                  <li>Add multiple start–end ranges. Time between 10 PM and 5 AM is counted as a late-night break.</li>
+                  <li>Breaks that cross midnight use <strong>Next day</strong> on the time picker.</li>
+                  <li>Entering a duration only, as before, still works.</li>
+                </ul>
               </div>
               <div class="whats-new-point">
-                <h3>Editing clock-in time no longer clears it</h3>
+                <h3>Insert notes with one tap</h3>
+                <ul class="whats-new-list">
+                  <li>Add shortcuts such as half day or remote, then tap to insert them.</li>
+                  <li>Paid leave stays fixed on the left. Other shortcuts can be added, renamed, deleted, and reordered.</li>
+                  <li>Added shortcuts are notes only. Pay and paid-leave balance do not change.</li>
+                </ul>
+              </div>
+              <div class="whats-new-point">
+                <h3>Six-week months stay readable on short screens</h3>
                 <p>
-                  If you correct and save clock-in time before clock-out, the time stays recorded.
+                  The monthly calendar tightens spacing when a month needs six weeks. Narrow cells hide extra hours and keep the clock-in/out range. Crashes when picking a time, checking backup, or showing ads are also fixed.
                 </p>
               </div>
               <p class="whats-new-more">
                 See
-                <a href="widget-shift-en.html">See punches and shifts from a Home Screen widget</a>
-                for widget setup.
+                <a href="help-en.html#daily">Daily in the user guide</a>
+                for the steps.
               </p>
             </article>
             <figure class="whats-new-shot">
               <div class="phone-frame">
                 <img
-                  src="assets/screenshots/en/home.png"
+                  src="assets/screenshots/en/daily.png"
                   width="230"
                   height="500"
-                  alt="Time Card home screen with clock-in and clock-out buttons and today's times"
+                  alt="Daily edit with start, end, breaks, and notes"
                   loading="lazy"
                 />
               </div>
-              <figcaption>Home Screen punch (the same actions are available from the widget)</figcaption>
+              <figcaption>Adjust breaks and notes on the daily screen</figcaption>
             </figure>
           </div>
 
           <div class="whats-new-history">
-            <h3 class="whats-new-history-title">Previous updates</h3>
-            <article class="whats-new-card whats-new-card--past">
-              <header class="whats-new-header">
-                <span class="whats-new-version">Ver. 3.5.1</span>
-                <span class="whats-new-date">November 2026</span>
-              </header>
-              <div class="whats-new-point">
-                <h3>Shift calendar layout matches the app</h3>
-                <ul class="whats-new-list">
-                  <li>Memos support line breaks (up to 3 lines with one shift, 1 line with two or more).</li>
-                  <li>App time display (range / hours) is reflected on the widget.</li>
-                  <li>In Japanese, holiday names stay visible even when the widget is smaller.</li>
-                </ul>
-              </div>
-              <div class="whats-new-point">
-                <h3>Android widgets are easier to use</h3>
-                <ul class="whats-new-list">
-                  <li>Shift calendar defaults to about <strong>4×4</strong> with larger type.</li>
-                  <li>Set background <strong>opacity</strong> in Home &amp; widget settings.</li>
-                  <li>1×1 and 2×1 punch widgets are less likely to clip times.</li>
-                </ul>
-              </div>
-            </article>
-            <article class="whats-new-card whats-new-card--past">
-              <header class="whats-new-header">
-                <span class="whats-new-version">Ver. 3.5.0</span>
-                <span class="whats-new-date">November 2026</span>
-              </header>
-              <div class="whats-new-point">
-                <h3>Add a shift calendar to the Home Screen</h3>
-                <ul class="whats-new-list">
-                  <li>On iPhone, medium shows this week and large shows this month.</li>
-                  <li>Tap a day to open it.</li>
-                  <li>Month and Year can be grouped by workplace or by cutoff day.</li>
-                  <li>Estimated pay on the widget can be shown or hidden.</li>
-                </ul>
-              </div>
-              <p class="whats-new-more">
-                See
-                <a href="widget-shift-en.html">See punches and shifts from a Home Screen widget</a>
-                and
-                <a href="monthly-totals-en.html">Group monthly totals by cutoff day or workplace</a>.
-              </p>
-            </article>
+            <div class="whats-new-history-head">
+              <h3 class="whats-new-history-title">Previous updates</h3>
+              <a class="whats-new-history-all" href="changelog-en.html">See the full changelog</a>
+            </div>
+            <ul class="changelog-teasers">
+              <li>
+                <a href="changelog-en.html#v3-5-2">
+                  <span class="changelog-teaser-version">Ver. 3.5.2</span>
+                  <span class="changelog-teaser-text">Widget date change and clock-in edits</span>
+                  <time datetime="2026-11">November 2026</time>
+                </a>
+              </li>
+              <li>
+                <a href="changelog-en.html#v3-5-1">
+                  <span class="changelog-teaser-version">Ver. 3.5.1</span>
+                  <span class="changelog-teaser-text">Shift calendar layout and Android widgets</span>
+                  <time datetime="2026-11">November 2026</time>
+                </a>
+              </li>
+              <li>
+                <a href="changelog-en.html#v3-5-0">
+                  <span class="changelog-teaser-version">Ver. 3.5.0</span>
+                  <span class="changelog-teaser-text">Home Screen shift calendar and totals grouping</span>
+                  <time datetime="2026-11">November 2026</time>
+                </a>
+              </li>
+            </ul>
           </div>
         </div>
       </section>
@@ -618,7 +612,7 @@
               <figure class="phone-frame">
                 <img
                   src="assets/screenshots/en/daily.png"
-                  alt="Daily edit with 13:00–23:00, 9 hours total, and $171.00 estimated pay"
+                  alt="Daily edit with 09:00–18:00, note chips, 7 hours 30 minutes, and $9,750 estimated pay"
                   loading="lazy"
                   width="390"
                   height="847"
@@ -631,8 +625,8 @@
                   Correct a punch or enter a day by hand. Total hours and estimated pay update immediately.
                 </p>
                 <ul>
-                  <li>Start, end, regular break, and late-night break</li>
-                  <li>Work patterns, leave flag, and quick tags</li>
+                  <li>Start and end. Add several break periods, or enter duration only</li>
+                  <li>Paid leave stays fixed. Add note shortcuts such as half day or remote</li>
                   <li>Shifts that end the next day</li>
                 </ul>
               </div>
@@ -783,6 +777,8 @@
         <span>© Time Card</span>
         <span>
           <a href="help-en.html">Guide</a>
+          ·
+          <a href="changelog-en.html">Changelog</a>
           ·
           <a href="#faq">FAQ</a>
           ·
